@@ -1,3 +1,5 @@
+#!/bin/bash
+
 dir=$1
 
 if [ ! "$dir" ]; then
@@ -22,7 +24,9 @@ fi
 function checkout {
 	if [ ! -d $dir/src/$2 ]; then
 		echo "Cloning $1 "
-		mkdir $dir/src
+		if [ ! -d $dir/src ]; then
+			mkdir $dir/src
+		fi
 		cd $dir/src
 		git clone -q git://github.com/$1 $2 --quiet
 		cd $2
