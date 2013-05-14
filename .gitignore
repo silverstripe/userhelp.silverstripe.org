@@ -1,0 +1,7 @@
+src/
+.DS_Store
+silverstripe-cache
+assets
+vendor/
+framework/
+docsviewer/
