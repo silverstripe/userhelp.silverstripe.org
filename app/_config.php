@@ -4,7 +4,7 @@ global $project;
 $project = 'app';
 
 global $database;
-$database = 'SS_ss2doc';
+$database = 'SS_userhelp';
 
 require_once('conf/ConfigureFromEnv.php');
 
@@ -14,7 +14,7 @@ error_reporting(E_ALL);
 
 // This line set's the current theme. More themes can be
 // downloaded from http://www.silverstripe.org/themes/
-SSViewer::set_theme('docs');
+SSViewer::set_theme('userhelp');
 
 if(@$_GET['db'] == "sqlite3") {
 	global $databaseConfig;
@@ -31,15 +31,13 @@ try {
 	DocumentationService::register("framework", BASE_PATH ."/src/framework_master/docs/", 'trunk');
 	DocumentationService::register("framework", BASE_PATH ."/src/framework_3.1/docs/", '3.1');
 	DocumentationService::register("framework", BASE_PATH ."/src/framework_3.0/docs/", '3.0', false, true);
-	DocumentationService::register("framework", BASE_PATH ."/src/framework_2.4/docs/", '2.4');
-	DocumentationService::register("framework", BASE_PATH ."/src/framework_2.3/docs/", '2.3');
 } catch(InvalidArgumentException $e) {
 	
 } // Silence if path is not found (for CI environment)
 
 DocumentationViewer::set_edit_link(
 	'framework',
-	'https://github.com/silverstripe/sapphire/edit/%version%/docs/%lang%/%path%',
+	'https://github.com/silverstripe/silverstripe-userhelp-content/edit/%version%/docs/%lang%/%path%',
 	array(
 		'rewritetrunktomaster' => true
 	)
@@ -49,18 +47,13 @@ DocumentationViewer::set_edit_link(
 Object::add_extension('Controller', 'ControllerExtension');
 
 if(Director::isLive()) {
-	ControllerExtension::$google_analytics_code = 'UA-84547-8';
+	ControllerExtension::$google_analytics_code = 'UA-84547-10';
 }
 
-Validator::set_javascript_validation_handler('none');	
+// Validator::set_javascript_validation_handler('none');	
 
 DocumentationSearch::set_meta_data(array(
-	'ShortName' => 'SilverStripe Documentation',
-	'Description' => 'Documentation for SilverStripe CMS / Framework',
+	'ShortName' => 'SilverStripe Userhelp',
+	'Description' => 'Userhelp for SilverStripe CMS / Framework',
 	'Tags' => 'silverstripe sapphire php framework cms content management system'
 ));
-
-DocumentationSearch::$boost_by_path = array(
-	// Changelogs have heaps of phrases, but are rarely relevant for content searches
-	'/^changelog/' => 0.05
-);

@@ -24,7 +24,7 @@ function checkout {
 		echo "Cloning $1 "
 		mkdir $dir/src
 		cd $dir/src
-		git clone --depth=100 -q git://github.com/$1 $2 --quiet
+		git clone -q git://github.com/$1 $2 --quiet
 		cd $2
 		git checkout -q origin/master
 	else
@@ -52,21 +52,8 @@ function checkout {
 }
 
 # core
-checkout 'silverstripe/sapphire.git' 'framework' 'master' 
-checkout 'silverstripe/sapphire.git' 'framework' '3.1' 
-checkout 'silverstripe/sapphire.git' 'framework' '3.0' 
-checkout 'silverstripe/sapphire.git' 'framework' '2.4'
-checkout 'silverstripe/sapphire.git' 'framework' '2.3' 
-
-# core modules with docs
-checkout 'silverstripe/silverstripe-cms.git' 'cms' '3.0'
-
-# checkout 'silverstripe/silverstripe-docsviewer.git' 'docsviewer'
-# checkout 'silverstripe/silverstripe-forum.git' 'forum'
-# checkout 'silverstripe/silverstripe-translatable.git' 'translatable'
-# checkout 'silverstripe/silverstripe-subsites.git' 'subsites'
-
-# popular labs projects
-# checkout 'silverstripe-labs/silverstripe-staticpublisher.git' 'staticpublisher'
+checkout 'silverstripe/silverstripe-userhelp-content.git' 'framework' 'master' 
+checkout 'silverstripe/silverstripe-userhelp-content.git' 'framework' '3.1' 
+checkout 'silverstripe/silverstripe-userhelp-content.git' 'framework' '3.0' 
 
 echo "Done."

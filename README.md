@@ -1,8 +1,10 @@
-# doc.silverstripe.org
+# userhelp.silverstripe.org
 
-This is the source code powering http://doc.silverstripe.org.  It primarily
+This is the source code powering http://userhelp.silverstripe.org.  It primarily
 consists of the SilverStripe framework and [docsviewer](https://github.com/silverstripe/silverstripe-docsviewer)
 module with minimal configuration.
+
+It's mostly copied off the existing [userhelp.silverstripe.org codebase](https://github.com/silverstripe/userhelp.silverstripe.org).
 
 For adding functionality or editing the style of the documentation see the 
 [docsviewer](http://github.com/silverstripe/silverstripe-docsviewer) module.
@@ -12,7 +14,7 @@ For adding functionality or editing the style of the documentation see the
 To set up a test instance:
 
  * Clone this repository to a LAMP server.
- * Install [Composer](http://doc.silverstripe.org/framework/en/installation/composer)
+ * Install [Composer](http://userhelp.silverstripe.org/framework/en/installation/composer)
  * After installing composer run `composer install --prefer-source` to grab the modules.
  * Run "make update" to check out the repositories from which is builds the
  docs (this will take a while the first time)
@@ -27,7 +29,7 @@ project small.
 To update or download the source documentation at any time run the following
 make command in your terminal:
 
-	cd /Sites/doc.silverstripe.org/
+	cd /Sites/userhelp.silverstripe.org/
 	make fetch
 
 `make fetch` will call bin/update.sh to download / update each module as listed
@@ -41,30 +43,19 @@ through the `app/_config.php` file.
 
 ## Contribution
 
-To contribute an improvement to the doc.silverstripe.org functionality or
+To contribute an improvement to the userhelp.silverstripe.org functionality or
 theme, submit a pull request on GitHub. Any approved pull requests will make
-their way onto the doc.silverstripe.org site in the next release.
+their way onto the userhelp.silverstripe.org site in the next release.
 
-The content for doc.silverstripe.org is stored in the modules repository inside
-a "docs" folder (for example, the framework documentation is stored at
-(github.com/silverstripe/sapphire)[https://github.com/silverstripe/sapphire/tree/master/docs]).
-
-If you wish to edit the documentation content, submit a pull request on that
+The content for userhelp.silverstripe.org is stored in a separate repository:
+[https://github.com/silverstripe/silverstripe-userhelp-content](https://github.com/silverstripe/silverstripe-userhelp-content). If you wish to edit the documentation content, submit a pull request on that
 Github project. Updates to the content are synced regularly with
-docs.silverstripe.org via a cron job.
+userhelp.silverstripe.org via a cron job.
 
 ## Cron job
 
-The cron job keeps doc.silverstripe.org up to date with the latest code. This
+The cron job keeps userhelp.silverstripe.org up to date with the latest code. This
 cron task calls `make update`, a script that fetches the latest documentation
 for each module from git and rebuilds the search indexes.
 
-	05 * * * * sites make -f /sites/ss2doc-v2/www/Makefile -C /sites/ss2doc-v2/www update
-
-## Legacy Dokuwiki
-
-We assume that DokuWiki (which ran the original doc.silverstripe.org) is
-served on the same webserver from a different webroot, that's symlinked in
-under the URL http://doc.silverstripe.org/old.
-
-	ln -s /sites/ss2doc/www /sites/ss2doc-v2/www/old
+	05 * * * * sites make -f /sites/userhelp.silverstripe.org/www/Makefile -C /sites/userhelp.silverstripe.org/www update
