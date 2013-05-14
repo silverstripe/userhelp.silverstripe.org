@@ -1,30 +1,37 @@
 {
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+    ],
     "hash": "c131b61fcd90a294211c864caeecf1c1",
     "packages": [
         {
             "name": "composer/installers",
-            "version": "v1.0.0",
+            "version": "v1.0.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/composer/installers",
-                "reference": "v1.0.0"
+                "url": "https://github.com/composer/installers.git",
+                "reference": "v1.0.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/composer/installers/zipball/v1.0.0",
-                "reference": "v1.0.0",
+                "url": "https://api.github.com/repos/composer/installers/zipball/v1.0.3",
+                "reference": "v1.0.3",
                 "shasum": ""
             },
             "replace": {
                 "shama/baton": "*"
             },
             "require-dev": {
-                "composer/composer": "1.0.*@dev"
+                "composer/composer": "1.0.*@dev",
+                "phpunit/phpunit": "3.7.*"
             },
-            "time": "2012-09-07 21:17:33",
             "type": "composer-installer",
             "extra": {
-                "class": "Composer\\Installers\\Installer"
+                "class": "Composer\\Installers\\Installer",
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
             },
             "autoload": {
                 "psr-0": {
@@ -39,31 +46,36 @@
                 {
                     "name": "Kyle Robinson Young",
                     "email": "kyle@dontkry.com",
-                    "homepage": "http://dontkry.com",
+                    "homepage": "https://github.com/shama",
                     "role": "Developer"
                 }
             ],
             "description": "A multi-framework Composer library installer",
             "homepage": "http://composer.github.com/installers/",
             "keywords": [
-                "symfony",
-                "installer",
-                "zend",
-                "wordpress",
+                "TYPO3 Flow",
+                "TYPO3 Neos",
+                "agl",
                 "cakephp",
                 "codeigniter",
-                "fuelphp",
                 "drupal",
-                "lithium",
-                "li3",
+                "fuelphp",
+                "installer",
                 "joomla",
+                "kohana",
                 "laravel",
+                "li3",
+                "lithium",
+                "mako",
                 "phpbb",
                 "ppi",
                 "silverstripe",
-                "kohana",
-                "mako"
-            ]
+                "symfony",
+                "wordpress",
+                "yii",
+                "zend"
+            ],
+            "time": "2013-03-02 22:45:58"
         },
         {
             "name": "silverstripe/docsviewer",
@@ -82,7 +94,6 @@
             "require": {
                 "silverstripe/framework": "3.*"
             },
-            "time": "2013-02-15 10:13:40",
             "type": "silverstripe-module",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -99,27 +110,27 @@
             "keywords": [
                 "documentation",
                 "silverstripe"
-            ]
+            ],
+            "time": "2013-02-15 10:13:40"
         },
         {
             "name": "silverstripe/framework",
             "version": "3.0.x-dev",
             "source": {
                 "type": "git",
-                "url": "https://github.com/silverstripe/sapphire",
-                "reference": "3b59d4a7628ab984505fd2a0e37a85ec9ef976c5"
+                "url": "https://github.com/silverstripe/sapphire.git",
+                "reference": "9a6a6ec75de6e122b748e55507e4065031bfc8ad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/silverstripe/sapphire/archive/3b59d4a7628ab984505fd2a0e37a85ec9ef976c5.zip",
-                "reference": "3b59d4a7628ab984505fd2a0e37a85ec9ef976c5",
+                "url": "https://api.github.com/repos/silverstripe/sapphire/zipball/9a6a6ec75de6e122b748e55507e4065031bfc8ad",
+                "reference": "9a6a6ec75de6e122b748e55507e4065031bfc8ad",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.2",
-                "composer/installers": "*"
+                "composer/installers": "*",
+                "php": ">=5.3.2"
             },
-            "time": "2012-12-17 10:45:09",
             "type": "silverstripe-module",
             "autoload": {
                 "classmap": [
@@ -145,10 +156,13 @@
             "keywords": [
                 "framework",
                 "silverstripe"
-            ]
+            ],
+            "time": "2013-05-14 11:39:43"
         }
     ],
-    "packages-dev": null,
+    "packages-dev": [
+
+    ],
     "aliases": [
 
     ],
@@ -156,5 +170,11 @@
     "stability-flags": {
         "silverstripe/docsviewer": 20,
         "silverstripe/framework": 20
-    }
+    },
+    "platform": {
+        "php": ">=5.3.2"
+    },
+    "platform-dev": [
+
+    ]
 }
