@@ -59,3 +59,8 @@ cron task calls `make update`, a script that fetches the latest documentation
 for each module from git and rebuilds the search indexes.
 
 	05 * * * * sites make -f /sites/userhelp.silverstripe.org/www/Makefile -C /sites/userhelp.silverstripe.org/www update
+
+## Deployment
+
+	bundle install
+	bundle exec cap production deploy

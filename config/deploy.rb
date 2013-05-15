@@ -13,7 +13,7 @@ after "deploy:finalize_update", "composer:install"
 # after "deploy:finalize_update", "deploy:copy_silverstripe_config"
 # Before the switching the current symlink, do the silverstripe specifics
 after "deploy:finalize_update", "deploy:silverstripe"
-after "deploy:setup", "deploy:fix_permissions"
+# after "deploy:setup", "deploy:fix_permissions"
 before "composer:install", "composer:copy_vendors"
 
 # Override the default capistrano deploy recipe that is build for rails apps
@@ -28,7 +28,7 @@ namespace :deploy do
 		# top.upload "./config/_ss_environment.php", "#{latest_release}/_ss_environment.php", :via => :scp
 
 		# Add the cache folder inside this release so we don't need to worry about the cache being weird.
-		run "mkdir -p #{latest_release}/silverstripe-cache"
+		run "mkdir -m 775 -p #{latest_release}/silverstripe-cache"
 
 		# Make sure that framework/sake is executable
 		run "chmod a+x #{latest_release}/framework/sake"
@@ -72,6 +72,6 @@ namespace :composer do
 	end
 	task :install do
 		run "sh -c 'cd #{latest_release} && curl -s http://getcomposer.org/installer | php'"
-		run "sh -c 'cd #{release_path} && ./composer.phar selfupdate && ./composer.phar install'"
+		run "sh -c 'cd #{release_path} && ./composer.phar selfupdate && ./composer.phar install --prefer-dist'"
 	end
 end
