@@ -32,6 +32,15 @@ ErrorDocument 500 /assets/error-500.html
 
 	RewriteCond %{REQUEST_URI} ^(.*)$
 	RewriteCond %{REQUEST_FILENAME} !-f
+
+	# Legacy rewrites
+	RewriteRule ^basic-overview/(.*)$ /framework/en/basic-overview$1 [R=301,L]
+	RewriteRule ^introduction-and-logging-in/(.*)$ /framework/en/introduction-and-logging-in/$1 [R=301,L]
+	RewriteRule ^for-website-content-editors/(.*)$ /framework/en/for-website-content-editors/$1 [R=301,L]
+	RewriteRule ^for-website-administrators/(.*)$ /framework/en/for-website-administrators/$1 [R=301,L]
+
+	RewriteCond %{REQUEST_URI} ^(.*)$
+	RewriteCond %{REQUEST_FILENAME} !-f
 	RewriteCond %{REQUEST_URI} !\.php$
 	RewriteRule .* framework/main.php?url=%1 [QSA]
 
