@@ -21,11 +21,10 @@ if(@$_GET['db'] == "sqlite3") {
 	$databaseConfig['type'] = 'SQLite3Database';
 }
 
+DocumentationService::set_automatic_registration(false);
+
 DocumentationViewer::set_link_base('');
 DocumentationViewer::$check_permission = false;
-
-DocumentationService::set_automatic_registration(false);
-DocumentationSearch::enable();
 
 try {
 	DocumentationService::register("framework", BASE_PATH ."/src/framework_master/docs/", 'trunk');
@@ -52,8 +51,10 @@ if(Director::isLive()) {
 
 // Validator::set_javascript_validation_handler('none');	
 
-DocumentationSearch::set_meta_data(array(
-	'ShortName' => 'SilverStripe Userhelp',
-	'Description' => 'Userhelp for SilverStripe CMS / Framework',
-	'Tags' => 'silverstripe sapphire php framework cms content management system'
-));
+// TODO Fix shared index generation between CLI and webuser
+// DocumentationSearch::enable();
+// DocumentationSearch::set_meta_data(array(
+// 	'ShortName' => 'SilverStripe Userhelp',
+// 	'Description' => 'Userhelp for SilverStripe CMS / Framework',
+// 	'Tags' => 'silverstripe sapphire php framework cms content management system'
+// ));
