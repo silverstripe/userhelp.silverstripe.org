@@ -119,12 +119,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/sapphire.git",
-                "reference": "9a6a6ec75de6e122b748e55507e4065031bfc8ad"
+                "reference": "b401d39aec8d340a86de5a6fd14e51b7566e10d8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/sapphire/zipball/9a6a6ec75de6e122b748e55507e4065031bfc8ad",
-                "reference": "9a6a6ec75de6e122b748e55507e4065031bfc8ad",
+                "url": "https://api.github.com/repos/silverstripe/sapphire/zipball/b401d39aec8d340a86de5a6fd14e51b7566e10d8",
+                "reference": "b401d39aec8d340a86de5a6fd14e51b7566e10d8",
                 "shasum": ""
             },
             "require": {
@@ -157,7 +157,7 @@
                 "framework",
                 "silverstripe"
             ],
-            "time": "2013-05-14 11:39:43"
+            "time": "2013-05-15 10:54:55"
         }
     ],
     "packages-dev": [
