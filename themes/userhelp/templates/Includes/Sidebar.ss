@@ -1,14 +1,14 @@
 <div id="sidebar">
 	<% if Menu(2) %>	
 		<ul id="sub-navigation">
-			<% control Menu(2) %>
+			<% loop Menu(2) %>
 				<li class="$LinkingMode">
 					<a href="$Link">$MenuTitle</a>
 					
 					<% if LinkOrSection = section %>
 						<% if Children %>
 							<ul>
-								<% control Children %>
+								<% loop Children %>
 									<li class="$LinkingMode">
 										<a href="$Link">$MenuTitle</a>
 										
@@ -16,21 +16,21 @@
 										<% if LinkOrSection = section %>
 											<% if Children %>
 												<ul>
-													<% control Children %>
+													<% loop Children %>
 														<li class="$LinkingMode">
 															<a href="$Link">$MenuTitle</a>
 														</li>
-													<% end_control %>
+													<% end_loop %>
 												</ul>
 											<% end_if %>
 										<% end_if %>
 									</li>	
-								<% end_control %>
+								<% end_loop %>
 							</ul>
 						<% end_if %>
 					<% end_if %>
 				</li>
-			<% end_control %>
+			<% end_loop %>
 		</ul>
 	<% end_if %>
 </div>
