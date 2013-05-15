@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "c131b61fcd90a294211c864caeecf1c1",
+    "hash": "edfe2cd035dab925412fd92c5fe625ef",
     "packages": [
         {
             "name": "composer/installers",
@@ -83,19 +83,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-docsviewer.git",
-                "reference": "440a2cbaa50bcaeed335a606c8074b508c938eec"
+                "reference": "6227e1eb68393af14dfa894df804d5ced86a30bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-docsviewer/zipball/440a2cbaa50bcaeed335a606c8074b508c938eec",
-                "reference": "440a2cbaa50bcaeed335a606c8074b508c938eec",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-docsviewer/zipball/6227e1eb68393af14dfa894df804d5ced86a30bb",
+                "reference": "6227e1eb68393af14dfa894df804d5ced86a30bb",
                 "shasum": ""
             },
             "require": {
-                "silverstripe/framework": "3.*"
+                "silverstripe/framework": ">=3.1.x-dev,<4.0"
             },
             "type": "silverstripe-module",
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "http://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -111,20 +111,20 @@
                 "documentation",
                 "silverstripe"
             ],
-            "time": "2013-02-15 10:13:40"
+            "time": "2013-05-15 13:51:27"
         },
         {
             "name": "silverstripe/framework",
-            "version": "3.0.x-dev",
+            "version": "3.1.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/sapphire.git",
-                "reference": "b401d39aec8d340a86de5a6fd14e51b7566e10d8"
+                "reference": "9f532fe976094d5ab5cdb6da2a58666fe67eb7d8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/sapphire/zipball/b401d39aec8d340a86de5a6fd14e51b7566e10d8",
-                "reference": "b401d39aec8d340a86de5a6fd14e51b7566e10d8",
+                "url": "https://api.github.com/repos/silverstripe/sapphire/zipball/9f532fe976094d5ab5cdb6da2a58666fe67eb7d8",
+                "reference": "9f532fe976094d5ab5cdb6da2a58666fe67eb7d8",
                 "shasum": ""
             },
             "require": {
@@ -157,7 +157,7 @@
                 "framework",
                 "silverstripe"
             ],
-            "time": "2013-05-15 10:54:55"
+            "time": "2013-05-15 03:49:23"
         }
     ],
     "packages-dev": [
