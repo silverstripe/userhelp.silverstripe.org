@@ -37,6 +37,7 @@ ErrorDocument 500 /assets/error-500.html
 	RewriteRule ^basic-overview/(.*)$ /framework/en/basic-overview$1 [R=301,L]
 	RewriteRule ^introduction-and-logging-in/(.*)$ /framework/en/introduction-and-logging-in/$1 [R=301,L]
 	RewriteRule ^for-website-content-editors/(.*)$ /framework/en/for-website-content-editors/$1 [R=301,L]
+	RewriteRule ^for-website-content-editors/workflow https://github.com/silverstripe-australia/advancedworkflow/blob/master/HOWTO.md [R=301,L]
 	RewriteRule ^for-website-administrators/(.*)$ /framework/en/for-website-administrators/$1 [R=301,L]
 
 	RewriteCond %{REQUEST_URI} ^(.*)$
