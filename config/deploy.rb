@@ -5,13 +5,14 @@ set :branch, "master"
 set :use_sudo, false
 set :current_dir, 'www'
 set :deploy_via, :remote_cache
-set :shared_children, %w(assets src)
+set :shared_children, %w(assets src .lucene-index)
 set :keep_releases, 5
-set :copy_exclude, ["config/deploy*", "Capfile", "README.md"]
+set :copy_exclude, ["config/*", "Capfile", "README.md"]
 
 after "deploy:finalize_update", "composer:install"
 # after "deploy:finalize_update", "deploy:copy_silverstripe_config"
 # Before the switching the current symlink, do the silverstripe specifics
+after "deploy:finalize_update", "deploy:symlink_custom_folders"
 after "deploy:finalize_update", "deploy:silverstripe"
 # after "deploy:setup", "deploy:fix_permissions"
 before "composer:install", "composer:copy_vendors"
@@ -47,6 +48,10 @@ namespace :deploy do
 
 		# Set the group owner to the webserver group
 		run "chown -RP :#{webserver_group} #{latest_release}"
+
+		# Fix Lucene permissions
+		run "if [ -d #{latest_release}/.lucene-index ]; then chown -RP :#{webserver_group} #{latest_release}/.lucene-index; fi"
+		run "if [ -d #{latest_release}/.lucene-index ]; then chmod g+rwx #{latest_release}/.lucene-index; fi"
 	end
 
 	# Since the deploy_to dir is also the user's home folder,
@@ -60,8 +65,15 @@ namespace :deploy do
 		stages.each do |name|
 			run "cp #{latest_release}/config/yml/#{name}.yml #{latest_release}/mysite/_config/environment.yml"
 		end
-		
 	end
+
+	# For some strange reason shared_children is not respected
+	task :symlink_custom_folders do
+		run "ln -nfs #{shared_path}/src #{release_path}/src"
+		run "ln -nfs #{shared_path}/assets #{release_path}/assets"
+		run "ln -nfs #{shared_path}/.lucene-index #{release_path}/.lucene-index"
+	end	
+
 end
 
 namespace :composer do
