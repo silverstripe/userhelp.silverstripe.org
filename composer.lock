@@ -118,13 +118,13 @@
             "version": "3.1.x-dev",
             "source": {
                 "type": "git",
-                "url": "https://github.com/silverstripe/sapphire.git",
-                "reference": "9f532fe976094d5ab5cdb6da2a58666fe67eb7d8"
+                "url": "https://github.com/silverstripe/silverstripe-framework.git",
+                "reference": "dbc2b62c6945ef0a5b6f198108505acdf812a2dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/sapphire/zipball/9f532fe976094d5ab5cdb6da2a58666fe67eb7d8",
-                "reference": "9f532fe976094d5ab5cdb6da2a58666fe67eb7d8",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/dbc2b62c6945ef0a5b6f198108505acdf812a2dd",
+                "reference": "dbc2b62c6945ef0a5b6f198108505acdf812a2dd",
                 "shasum": ""
             },
             "require": {
@@ -137,7 +137,7 @@
                     "tests/behat/features/bootstrap"
                 ]
             },
-            "notification-url": "http://packagist.org/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -157,7 +157,7 @@
                 "framework",
                 "silverstripe"
             ],
-            "time": "2013-05-15 03:49:23"
+            "time": "2013-06-08 05:54:36"
         }
     ],
     "packages-dev": [
