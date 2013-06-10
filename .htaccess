@@ -33,6 +33,10 @@ ErrorDocument 500 /assets/error-500.html
 	RewriteCond %{REQUEST_URI} ^(.*)$
 	RewriteCond %{REQUEST_FILENAME} !-f
 
+	# Work around broken search controller routing with $link_base=''
+	# See https://github.com/silverstripe/silverstripe-docsviewer/issues/27
+	RewriteRule ^DocumentationSearchForm/?(.*)$ /dev/docs/DocumentationSearchForm/$1 [R=301,L]
+
 	# Legacy rewrites
 	RewriteRule ^basic-overview/(.*)$ /framework/en/basic-overview$1 [R=301,L]
 	RewriteRule ^introduction-and-logging-in/(.*)$ /framework/en/introduction-and-logging-in/$1 [R=301,L]
