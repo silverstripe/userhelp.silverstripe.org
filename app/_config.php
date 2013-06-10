@@ -22,6 +22,7 @@ if(@$_GET['db'] == "sqlite3") {
 }
 
 DocumentationService::set_automatic_registration(false);
+DocumentationService::enable_meta_comments();
 
 DocumentationViewer::set_link_base('');
 DocumentationViewer::$check_permission = false;
