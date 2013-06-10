@@ -52,10 +52,13 @@ if(Director::isLive()) {
 
 // Validator::set_javascript_validation_handler('none');	
 
-// TODO Fix shared index generation between CLI and webuser
-// DocumentationSearch::enable();
-// DocumentationSearch::set_meta_data(array(
-// 	'ShortName' => 'SilverStripe Userhelp',
-// 	'Description' => 'Userhelp for SilverStripe CMS / Framework',
-// 	'Tags' => 'silverstripe sapphire php framework cms content management system'
-// ));
+DocumentationSearch::enable();
+DocumentationSearch::set_meta_data(array(
+	'ShortName' => 'SilverStripe Userhelp',
+	'Description' => 'Userhelp for SilverStripe CMS / Framework',
+	'Tags' => 'silverstripe sapphire php framework cms content management system'
+));
+// Set shared index (avoid issues with different temp paths between CLI and web users)
+if(file_exists(BASE_PATH . '/.lucene-index')) {
+	DocumentationSearch::set_index(BASE_PATH . '/.lucene-index');
+}
