@@ -10,13 +10,16 @@
 	</head>
 	
 	<body>
+			<header data-0="background-position: 50% 50%;" data-544="background-position: 50% -30%;">
+				<div class="global-nav header-mask">
+					<div id="navWrapper">
+						$GlobalNav
+						<% include SearchBox %>
+					</div>
+				</div>
+			</header>
+
 		<div id="container" class="container">
-			<div id="header">
-				<h1>
-					<a href="http://www.silverstripe.org" title="Visit SilverStripe.org" class="logo">&nbsp;</a>
-					<a href="$Top.Link" title="Userhelp"><span><% _t('SILVERSTRIPEDOCUMENTATION', 'Userhelp') %></span></a>
-				</h1>
-			</div>
 			
 			
 			<div id="layout">
@@ -64,7 +67,6 @@
 		</div>
 		
 		<script src="framework/thirdparty/jquery/jquery.js"></script>
-		<script src="http://silverstripe.org/toolbar/javascript/toolbar.js?site=userhelp&amp;searchShow=true"></script>
 
 		<% if GoogleAnalyticsCode %>
 		<script type="text/javascript">

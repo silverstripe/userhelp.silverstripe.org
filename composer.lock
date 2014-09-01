@@ -1,30 +1,32 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
     ],
-    "hash": "edfe2cd035dab925412fd92c5fe625ef",
+    "hash": "2a820a635521652ae2afcf9f7040ebf2",
     "packages": [
         {
             "name": "composer/installers",
-            "version": "v1.0.6",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "b3bd071ea114a57212c75aa6a2eef5cfe0cc798f"
+                "reference": "74fb0a7a1a23696d9c8cc2fba5903f6711cdd067"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/b3bd071ea114a57212c75aa6a2eef5cfe0cc798f",
-                "reference": "b3bd071ea114a57212c75aa6a2eef5cfe0cc798f",
+                "url": "https://api.github.com/repos/composer/installers/zipball/74fb0a7a1a23696d9c8cc2fba5903f6711cdd067",
+                "reference": "74fb0a7a1a23696d9c8cc2fba5903f6711cdd067",
                 "shasum": ""
             },
             "replace": {
+                "roundcube/plugin-installer": "*",
                 "shama/baton": "*"
             },
             "require-dev": {
                 "composer/composer": "1.0.*@dev",
-                "phpunit/phpunit": "3.7.*"
+                "phpunit/phpunit": "4.1.*"
             },
             "type": "composer-installer",
             "extra": {
@@ -46,37 +48,136 @@
                 {
                     "name": "Kyle Robinson Young",
                     "email": "kyle@dontkry.com",
-                    "homepage": "https://github.com/shama",
-                    "role": "Developer"
+                    "homepage": "https://github.com/shama"
                 }
             ],
             "description": "A multi-framework Composer library installer",
             "homepage": "http://composer.github.com/installers/",
             "keywords": [
-                "TYPO3 CMS",
-                "TYPO3 Flow",
-                "TYPO3 Neos",
+                "Craft",
+                "Dolibarr",
+                "Hurad",
+                "MODX Evo",
+                "OXID",
+                "WolfCMS",
                 "agl",
+                "annotatecms",
+                "bitrix",
                 "cakephp",
+                "chef",
                 "codeigniter",
+                "concrete5",
+                "croogo",
                 "drupal",
+                "elgg",
                 "fuelphp",
                 "installer",
                 "joomla",
                 "kohana",
                 "laravel",
-                "li3",
                 "lithium",
+                "magento",
                 "mako",
+                "mediawiki",
                 "modulework",
+                "moodle",
                 "phpbb",
+                "piwik",
                 "ppi",
+                "puppet",
+                "roundcube",
+                "shopware",
                 "silverstripe",
                 "symfony",
+                "typo3",
                 "wordpress",
-                "zend"
+                "zend",
+                "zikula"
             ],
-            "time": "2013-08-20 04:37:09"
+            "time": "2014-08-18 20:00:12"
+        },
+        {
+            "name": "erusev/parsedown",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/erusev/parsedown.git",
+                "reference": "d24439ada0704948deef0d3eda2ea20fd8db1747"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/erusev/parsedown/zipball/d24439ada0704948deef0d3eda2ea20fd8db1747",
+                "reference": "d24439ada0704948deef0d3eda2ea20fd8db1747",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Parsedown": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Emanuil Rusev",
+                    "email": "hello@erusev.com",
+                    "homepage": "http://erusev.com"
+                }
+            ],
+            "description": "Parser for Markdown.",
+            "homepage": "http://parsedown.org",
+            "keywords": [
+                "markdown",
+                "parser"
+            ],
+            "time": "2014-05-21 20:20:46"
+        },
+        {
+            "name": "erusev/parsedown-extra",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/erusev/parsedown-extra.git",
+                "reference": "bcd3930f7f10915e40513e1951a253f061d75463"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/erusev/parsedown-extra/zipball/bcd3930f7f10915e40513e1951a253f061d75463",
+                "reference": "bcd3930f7f10915e40513e1951a253f061d75463",
+                "shasum": ""
+            },
+            "require": {
+                "erusev/parsedown": "~1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "ParsedownExtra": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Emanuil Rusev",
+                    "email": "hello@erusev.com",
+                    "homepage": "http://erusev.com"
+                }
+            ],
+            "description": "An extension of Parsedown that adds support for Markdown Extra.",
+            "homepage": "https://github.com/erusev/parsedown-extra",
+            "keywords": [
+                "markdown",
+                "markdown extra",
+                "parsedown",
+                "parser"
+            ],
+            "time": "2014-06-18 23:58:16"
         },
         {
             "name": "silverstripe/docsviewer",
@@ -84,16 +185,20 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-docsviewer.git",
-                "reference": "b3d4e402a5fb68a2817c8061b9757c4e23350e88"
+                "reference": "afe229d34366e0aef0d726727fd8e8d302c5ace4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-docsviewer/zipball/b3d4e402a5fb68a2817c8061b9757c4e23350e88",
-                "reference": "b3d4e402a5fb68a2817c8061b9757c4e23350e88",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-docsviewer/zipball/afe229d34366e0aef0d726727fd8e8d302c5ace4",
+                "reference": "afe229d34366e0aef0d726727fd8e8d302c5ace4",
                 "shasum": ""
             },
             "require": {
+                "erusev/parsedown-extra": "0.1.0",
                 "silverstripe/framework": "~3.1"
+            },
+            "suggest": {
+                "silverstripe/staticpublisher": "Allows publishing documentation as HTML"
             },
             "type": "silverstripe-module",
             "notification-url": "https://packagist.org/downloads/",
@@ -104,7 +209,7 @@
                 {
                     "name": "Will Rossiter",
                     "email": "will@fullscreen.io",
-                    "homepage": "http://wilr.github.com"
+                    "homepage": "http://wilr.github.io"
                 }
             ],
             "description": "Documentation viewer module for SilverStripe",
@@ -112,7 +217,7 @@
                 "documentation",
                 "silverstripe"
             ],
-            "time": "2013-10-04 08:55:44"
+            "time": "2014-08-01 04:45:09"
         },
         {
             "name": "silverstripe/framework",
@@ -120,17 +225,20 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-framework.git",
-                "reference": "bb7c973e34e399325b553700ac32f49fa4fcefb4"
+                "reference": "7bacaa8c6ba11a0348b86275df7335ec5d78f146"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/bb7c973e34e399325b553700ac32f49fa4fcefb4",
-                "reference": "bb7c973e34e399325b553700ac32f49fa4fcefb4",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/7bacaa8c6ba11a0348b86275df7335ec5d78f146",
+                "reference": "7bacaa8c6ba11a0348b86275df7335ec5d78f146",
                 "shasum": ""
             },
             "require": {
                 "composer/installers": "*",
                 "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~3.7@stable"
             },
             "type": "silverstripe-module",
             "autoload": {
@@ -158,24 +266,60 @@
                 "framework",
                 "silverstripe"
             ],
-            "time": "2013-10-03 10:22:06"
+            "time": "2014-08-30 03:18:47"
+        },
+        {
+            "name": "silverstripe/toolbar",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silverstripe/silverstripe-globaltoolbar.git",
+                "reference": "29ff28891a0fec59e1e317c8458f443bac267ad5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-globaltoolbar/zipball/29ff28891a0fec59e1e317c8458f443bac267ad5",
+                "reference": "29ff28891a0fec59e1e317c8458f443bac267ad5",
+                "shasum": ""
+            },
+            "type": "silverstripe-module",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Ingo Schommer",
+                    "homepage": "http://chillu.com",
+                    "email": "ingo@silverstripe.com"
+                },
+                {
+                    "name": "Uncle Cheese",
+                    "homepage": "http://leftandmain.com",
+                    "email": "unclecheese@leftandmain.com"
+                }
+            ],
+            "description": "Navigation bar include showing SilverStripe community sites",
+            "homepage": "https://github.com/silverstripe/silverstripe-globaltoolbar/",
+            "keywords": [
+                "silverstripe"
+            ],
+            "support": {
+                "source": "https://github.com/silverstripe/silverstripe-globaltoolbar/tree/master",
+                "issues": "https://github.com/silverstripe/silverstripe-globaltoolbar/issues"
+            },
+            "time": "2014-08-28 03:15:33"
         }
     ],
-    "packages-dev": [
-
-    ],
-    "aliases": [
-
-    ],
-    "minimum-stability": "stable",
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
     "stability-flags": {
         "silverstripe/docsviewer": 20,
         "silverstripe/framework": 20
     },
+    "prefer-stable": false,
     "platform": {
         "php": ">=5.3.2"
     },
-    "platform-dev": [
-
-    ]
+    "platform-dev": []
 }
