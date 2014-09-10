@@ -7,6 +7,7 @@
 		<title><% if PageTitle %>$PageTitle <% end_if %>SilverStripe Userhelp</title>
 
 		<link type="text/css" rel="stylesheet" href="http://silverstripe.org/toolbar/css/toolbar.css" />
+		<script>window.GLOBAL_NAV_SECONDARY_ID = 1556;</script>
 	</head>
 	
 	<body>
@@ -20,7 +21,11 @@
 			</header>
 
 		<div id="container" class="container">
-			
+			<div id="header">
+				<h1>
+					<a href="$Top.Link" title="Userhelp"><span><% _t('SILVERSTRIPEDOCUMENTATION', 'Userhelp') %></span></a>
+				</h1>
+			</div>
 			
 			<div id="layout">
 				<div id="search-bar">
