@@ -274,12 +274,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-globaltoolbar.git",
-                "reference": "09f82e05b0238e8f14ddc48da4824e90b0b05d59"
+                "reference": "1b3174d30e68c5556db2e0ae3e810def55c39ded"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-globaltoolbar/zipball/09f82e05b0238e8f14ddc48da4824e90b0b05d59",
-                "reference": "09f82e05b0238e8f14ddc48da4824e90b0b05d59",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-globaltoolbar/zipball/1b3174d30e68c5556db2e0ae3e810def55c39ded",
+                "reference": "1b3174d30e68c5556db2e0ae3e810def55c39ded",
                 "shasum": ""
             },
             "require": {
@@ -310,7 +310,7 @@
                 "source": "https://github.com/silverstripe/silverstripe-globaltoolbar/tree/master",
                 "issues": "https://github.com/silverstripe/silverstripe-globaltoolbar/issues"
             },
-            "time": "2014-09-09 05:39:42"
+            "time": "2014-09-11 01:14:30"
         },
         {
             "name": "unclecheese/display-logic",
