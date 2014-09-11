@@ -5,7 +5,7 @@
 		<% base_tag %>
 		<meta charset="utf-8" />
 		<title><% if PageTitle %>$PageTitle <% end_if %>SilverStripe Userhelp</title>
-
+		<link rel="stylesheet" href="themes/userhelp/css/ionicons.min.css" />
 		<link type="text/css" rel="stylesheet" href="http://silverstripe.org/toolbar/css/toolbar.css" />
 		<script>window.GLOBAL_NAV_SECONDARY_ID = 1556;</script>
 	</head>
