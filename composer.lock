@@ -276,12 +276,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-globaltoolbar.git",
-                "reference": "8ed80981c58ef6b8ba40ec2692380a3e2f42168a"
+                "reference": "7ebc6091e8b41926d430f66da3bc279ea6137a12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-globaltoolbar/zipball/8ed80981c58ef6b8ba40ec2692380a3e2f42168a",
-                "reference": "8ed80981c58ef6b8ba40ec2692380a3e2f42168a",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-globaltoolbar/zipball/7ebc6091e8b41926d430f66da3bc279ea6137a12",
+                "reference": "7ebc6091e8b41926d430f66da3bc279ea6137a12",
                 "shasum": ""
             },
             "require": {
@@ -312,7 +312,7 @@
                 "source": "https://github.com/silverstripe/silverstripe-globaltoolbar/tree/master",
                 "issues": "https://github.com/silverstripe/silverstripe-globaltoolbar/issues"
             },
-            "time": "2014-09-16 04:39:50"
+            "time": "2014-09-17 02:43:54"
         },
         {
             "name": "unclecheese/display-logic",
@@ -360,12 +360,8 @@
             "time": "2014-07-02 03:45:20"
         }
     ],
-    "packages-dev": [
-
-    ],
-    "aliases": [
-
-    ],
+    "packages-dev": [],
+    "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
         "silverstripe/docsviewer": 20,
@@ -375,7 +371,5 @@
     "platform": {
         "php": ">=5.3.2"
     },
-    "platform-dev": [
-
-    ]
+    "platform-dev": []
 }
