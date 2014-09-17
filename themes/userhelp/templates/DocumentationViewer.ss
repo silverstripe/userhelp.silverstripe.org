@@ -6,7 +6,8 @@
 		<meta charset="utf-8" />
 		<title><% if PageTitle %>$PageTitle <% end_if %>SilverStripe Userhelp</title>
 		<link rel="stylesheet" href="themes/userhelp/css/ionicons.min.css" />
-		<link type="text/css" rel="stylesheet" href="http://silverstripe.org/toolbar/css/toolbar.css" />
+		<script type="text/javascript" src="//use.typekit.net/emt4dhq.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 		<script>window.GLOBAL_NAV_SECONDARY_ID = 1556;</script>
 	</head>
 	
