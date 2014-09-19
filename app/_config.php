@@ -10,30 +10,13 @@ require_once('conf/ConfigureFromEnv.php');
 
 MySQLDatabase::set_connection_charset('utf8');
 
-error_reporting(E_ALL);
-
 // This line set's the current theme. More themes can be
 // downloaded from http://www.silverstripe.org/themes/
 SSViewer::set_theme('userhelp');
 
-if(@$_GET['db'] == "sqlite3") {
-	global $databaseConfig;
-	$databaseConfig['type'] = 'SQLite3Database';
-}
-
-DocumentationService::set_automatic_registration(false);
-DocumentationService::enable_meta_comments();
-
-DocumentationViewer::set_link_base('');
-DocumentationViewer::$check_permission = false;
-
-try {
-	DocumentationService::register("framework", BASE_PATH ."/src/framework_master/docs/", 'trunk');
-	DocumentationService::register("framework", BASE_PATH ."/src/framework_3.1/docs/", '3.1', false, true);
-	DocumentationService::register("framework", BASE_PATH ."/src/framework_3.0/docs/", '3.0');
-} catch(InvalidArgumentException $e) {
-	
-} // Silence if path is not found (for CI environment)
+Config::inst()->update('DocumentationManifest', 'automatic_registration', false);
+Config::inst()->update('DocumentationViewer', 'link_base', '');
+Config::inst()->update('DocumentationViewer', 'check_permission', false);
 
 DocumentationViewer::set_edit_link(
 	'framework',
@@ -42,23 +25,20 @@ DocumentationViewer::set_edit_link(
 		'rewritetrunktomaster' => true
 	)
 );
-
-
-Object::add_extension('Controller', 'ControllerExtension');
-
-if(Director::isLive()) {
-	ControllerExtension::$google_analytics_code = 'UA-84547-10';
-}
-
-// Validator::set_javascript_validation_handler('none');	
-
-DocumentationSearch::enable();
 DocumentationSearch::set_meta_data(array(
 	'ShortName' => 'SilverStripe Userhelp',
 	'Description' => 'Userhelp for SilverStripe CMS / Framework',
 	'Tags' => 'silverstripe sapphire php framework cms content management system'
 ));
+
 // Set shared index (avoid issues with different temp paths between CLI and web users)
 if(file_exists(BASE_PATH . '/.lucene-index')) {
-	DocumentationSearch::set_index(BASE_PATH . '/.lucene-index');
+	Config::inst()->update('DocumentationSearch', 'index_location', BASE_PATH . '/.lucene-index');
 }
+
+// Fix invalid character in iconv
+// see http://stackoverflow.com/questions/4723135/invalid-characters-for-lucene-text-search
+Zend_Search_Lucene_Search_QueryParser::setDefaultEncoding('utf-8');
+Zend_Search_Lucene_Analysis_Analyzer::setDefault(
+    new Zend_Search_Lucene_Analysis_Analyzer_Common_Utf8_CaseInsensitive ()
+);
