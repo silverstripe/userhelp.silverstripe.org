@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2a820a635521652ae2afcf9f7040ebf2",
+    "hash": "cfee930321b157f3829a71a28b88ee3c",
     "packages": [
         {
             "name": "composer/installers",
@@ -16,7 +16,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/5914f4a3e90a9176c93e5dd0c8ad2b3679fda6ed",
+                "url": "https://api.github.com/repos/composer/installers/zipball/e420b539e8d7b38b7c6f3f99dccc0386bd3dfe41",
                 "reference": "5914f4a3e90a9176c93e5dd0c8ad2b3679fda6ed",
                 "shasum": ""
             },
@@ -191,7 +191,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-docsviewer/zipball/fab0cba8a821f14a35f173e0061d4d9c225599a2",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-docsviewer/zipball/413d8e396a66f08c31bed3ae7c97116099689a46",
                 "reference": "fab0cba8a821f14a35f173e0061d4d9c225599a2",
                 "shasum": ""
             },
@@ -231,7 +231,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/6610a6a8fb6dc3ec19dddc5515c65672f3126d90",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/31db269f716c4b47279416fa949739b1f092c169",
                 "reference": "6610a6a8fb6dc3ec19dddc5515c65672f3126d90",
                 "shasum": ""
             },
@@ -272,16 +272,16 @@
         },
         {
             "name": "silverstripe/toolbar",
-            "version": "dev-master",
+            "version": "3.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-globaltoolbar.git",
-                "reference": "7ebc6091e8b41926d430f66da3bc279ea6137a12"
+                "reference": "aad67d0ebd2c1d469f732934f249836f636549fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-globaltoolbar/zipball/7ebc6091e8b41926d430f66da3bc279ea6137a12",
-                "reference": "7ebc6091e8b41926d430f66da3bc279ea6137a12",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-globaltoolbar/zipball/aad67d0ebd2c1d469f732934f249836f636549fd",
+                "reference": "aad67d0ebd2c1d469f732934f249836f636549fd",
                 "shasum": ""
             },
             "require": {
@@ -309,10 +309,10 @@
                 "silverstripe"
             ],
             "support": {
-                "source": "https://github.com/silverstripe/silverstripe-globaltoolbar/tree/master",
+                "source": "https://github.com/silverstripe/silverstripe-globaltoolbar/tree/3.0.5",
                 "issues": "https://github.com/silverstripe/silverstripe-globaltoolbar/issues"
             },
-            "time": "2014-09-17 02:43:54"
+            "time": "2015-07-08 02:55:08"
         },
         {
             "name": "unclecheese/display-logic",
@@ -365,9 +365,11 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "silverstripe/docsviewer": 20,
-        "silverstripe/framework": 20
+        "silverstripe/framework": 20,
+        "silverstripe/toolbar": 0
     },
     "prefer-stable": false,
+    "prefer-lowest": false,
     "platform": {
         "php": ">=5.3.2"
     },
