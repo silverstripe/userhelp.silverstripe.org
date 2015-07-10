@@ -56,8 +56,8 @@ function checkout {
 }
 
 # core
-checkout 'silverstripe/silverstripe-userhelp-content.git' 'framework' 'master' 
-checkout 'silverstripe/silverstripe-userhelp-content.git' 'framework' '3.1' 
-checkout 'silverstripe/silverstripe-userhelp-content.git' 'framework' '3.0' 
+checkout 'silverstripe/silverstripe-userhelp-content.git' 'framework' '3.2'
+checkout 'silverstripe/silverstripe-userhelp-content.git' 'framework' '3.1'
+checkout 'silverstripe/silverstripe-userhelp-content.git' 'framework' '3.0'
 
 echo "Done."

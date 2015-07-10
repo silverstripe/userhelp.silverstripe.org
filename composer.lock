@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "cfee930321b157f3829a71a28b88ee3c",
+    "hash": "8efbe97b69cbc15c463fbfd235da80aa",
     "packages": [
         {
             "name": "composer/installers",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "5914f4a3e90a9176c93e5dd0c8ad2b3679fda6ed"
+                "reference": "e420b539e8d7b38b7c6f3f99dccc0386bd3dfe41"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/composer/installers/zipball/e420b539e8d7b38b7c6f3f99dccc0386bd3dfe41",
-                "reference": "5914f4a3e90a9176c93e5dd0c8ad2b3679fda6ed",
+                "reference": "e420b539e8d7b38b7c6f3f99dccc0386bd3dfe41",
                 "shasum": ""
             },
             "replace": {
@@ -59,9 +59,11 @@
                 "Hurad",
                 "MODX Evo",
                 "OXID",
+                "SMF",
                 "Thelia",
                 "WolfCMS",
                 "agl",
+                "aimeos",
                 "annotatecms",
                 "bitrix",
                 "cakephp",
@@ -69,6 +71,7 @@
                 "codeigniter",
                 "concrete5",
                 "croogo",
+                "dokuwiki",
                 "drupal",
                 "elgg",
                 "fuelphp",
@@ -96,20 +99,20 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2014-09-16 22:11:26"
+            "time": "2015-06-13 15:30:38"
         },
         {
             "name": "erusev/parsedown",
-            "version": "1.0.1",
+            "version": "1.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/erusev/parsedown.git",
-                "reference": "d24439ada0704948deef0d3eda2ea20fd8db1747"
+                "reference": "495e7ac73bb5fde6b857b88ff2bb1b5e79a4263a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/erusev/parsedown/zipball/d24439ada0704948deef0d3eda2ea20fd8db1747",
-                "reference": "d24439ada0704948deef0d3eda2ea20fd8db1747",
+                "url": "https://api.github.com/repos/erusev/parsedown/zipball/495e7ac73bb5fde6b857b88ff2bb1b5e79a4263a",
+                "reference": "495e7ac73bb5fde6b857b88ff2bb1b5e79a4263a",
                 "shasum": ""
             },
             "type": "library",
@@ -135,20 +138,20 @@
                 "markdown",
                 "parser"
             ],
-            "time": "2014-05-21 20:20:46"
+            "time": "2014-11-29 02:29:14"
         },
         {
             "name": "erusev/parsedown-extra",
-            "version": "0.1.0",
+            "version": "0.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/erusev/parsedown-extra.git",
-                "reference": "bcd3930f7f10915e40513e1951a253f061d75463"
+                "reference": "910f726ab6c92ba24e5579f57507c7197d09a159"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/erusev/parsedown-extra/zipball/bcd3930f7f10915e40513e1951a253f061d75463",
-                "reference": "bcd3930f7f10915e40513e1951a253f061d75463",
+                "url": "https://api.github.com/repos/erusev/parsedown-extra/zipball/910f726ab6c92ba24e5579f57507c7197d09a159",
+                "reference": "910f726ab6c92ba24e5579f57507c7197d09a159",
                 "shasum": ""
             },
             "require": {
@@ -179,24 +182,25 @@
                 "parsedown",
                 "parser"
             ],
-            "time": "2014-06-18 23:58:16"
+            "time": "2014-09-16 11:54:01"
         },
         {
             "name": "silverstripe/docsviewer",
-            "version": "dev-master",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-docsviewer.git",
-                "reference": "fab0cba8a821f14a35f173e0061d4d9c225599a2"
+                "reference": "3a239fcdfa7afb389f5304ac0e7b8cacc3afb642"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-docsviewer/zipball/413d8e396a66f08c31bed3ae7c97116099689a46",
-                "reference": "fab0cba8a821f14a35f173e0061d4d9c225599a2",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-docsviewer/zipball/3a239fcdfa7afb389f5304ac0e7b8cacc3afb642",
+                "reference": "3a239fcdfa7afb389f5304ac0e7b8cacc3afb642",
                 "shasum": ""
             },
             "require": {
-                "erusev/parsedown-extra": "0.1.0",
+                "erusev/parsedown": "~1.1.0",
+                "erusev/parsedown-extra": "0.2.2",
                 "silverstripe/framework": "~3.1"
             },
             "suggest": {
@@ -219,20 +223,20 @@
                 "documentation",
                 "silverstripe"
             ],
-            "time": "2014-09-05 21:20:05"
+            "time": "2015-04-30 23:18:36"
         },
         {
             "name": "silverstripe/framework",
-            "version": "3.1.x-dev",
+            "version": "3.1.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-framework.git",
-                "reference": "6610a6a8fb6dc3ec19dddc5515c65672f3126d90"
+                "reference": "04b803dfc6dc60f2e6a38fa74f957156230b54be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/31db269f716c4b47279416fa949739b1f092c169",
-                "reference": "6610a6a8fb6dc3ec19dddc5515c65672f3126d90",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/04b803dfc6dc60f2e6a38fa74f957156230b54be",
+                "reference": "04b803dfc6dc60f2e6a38fa74f957156230b54be",
                 "shasum": ""
             },
             "require": {
@@ -268,7 +272,7 @@
                 "framework",
                 "silverstripe"
             ],
-            "time": "2014-09-15 21:35:53"
+            "time": "2015-05-28 06:59:11"
         },
         {
             "name": "silverstripe/toolbar",
@@ -316,16 +320,16 @@
         },
         {
             "name": "unclecheese/display-logic",
-            "version": "1.0.4",
+            "version": "1.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/unclecheese/silverstripe-display-logic.git",
-                "reference": "051a860ebd65006493a19ce3381f9af3de8be875"
+                "reference": "df95d85a0886009ce5ccae2993bbb1d0d04bc182"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/unclecheese/silverstripe-display-logic/zipball/051a860ebd65006493a19ce3381f9af3de8be875",
-                "reference": "051a860ebd65006493a19ce3381f9af3de8be875",
+                "url": "https://api.github.com/repos/unclecheese/silverstripe-display-logic/zipball/df95d85a0886009ce5ccae2993bbb1d0d04bc182",
+                "reference": "df95d85a0886009ce5ccae2993bbb1d0d04bc182",
                 "shasum": ""
             },
             "require": {
@@ -345,8 +349,7 @@
             "authors": [
                 {
                     "name": "Uncle Cheese",
-                    "email": "unclecheese@leftandmain.com",
-                    "homepage": "http://leftandmain.com"
+                    "email": "unclecheese@leftandmain.com"
                 }
             ],
             "description": "Allows assignment of conditions for display and hide of specific form fields based on client side behavior.",
@@ -357,15 +360,15 @@
                 "logic",
                 "silverstripe"
             ],
-            "time": "2014-07-02 03:45:20"
+            "time": "2014-12-07 23:30:55"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "silverstripe/docsviewer": 20,
-        "silverstripe/framework": 20,
+        "silverstripe/docsviewer": 0,
+        "silverstripe/framework": 0,
         "silverstripe/toolbar": 0
     },
     "prefer-stable": false,
