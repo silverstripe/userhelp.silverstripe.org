@@ -1,9 +1,7 @@
 ---
-Name: userhelpdocconfig
+name: docsviewer
+after: docsviewer#docsviewer
 ---
-Controller:
-  extensions:
-    - ControllerExtension
 DocumentationViewer:
   google_analytics_code: 'UA-84547-10'
 DocumentationSearch:
