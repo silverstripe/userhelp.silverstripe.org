@@ -1,8 +1,8 @@
-src/
+/src/
 .DS_Store
-silverstripe-cache
-assets
-vendor/
-framework/
-docsviewer/
-toolbar/
+/silverstripe-cache/
+/assets
+/vendor/
+/framework/
+/docsviewer/
+/toolbar/

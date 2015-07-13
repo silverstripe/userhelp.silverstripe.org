@@ -4,10 +4,10 @@ Name: userhelpdocconfig
 Controller:
   extensions:
     - ControllerExtension
-  
 DocumentationViewer:
   google_analytics_code: 'UA-84547-10'
-  
+DocumentationSearch:
+  enabled: true  
 DocumentationManifest:
   automatic_registration: false
   register_entities:
@@ -27,9 +27,4 @@ DocumentationManifest:
       Title: "User Help"
       Version: "3.0"
       DefaultEntity: true
-
-DocumentationSearch:
-  enabled: true
-
-  
-  
+      
