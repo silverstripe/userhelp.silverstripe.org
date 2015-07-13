@@ -18,6 +18,10 @@ Config::inst()->update('DocumentationManifest', 'automatic_registration', false)
 Config::inst()->update('DocumentationViewer', 'link_base', '');
 Config::inst()->update('DocumentationViewer', 'check_permission', false);
 
+if(Director::isLive()) {
+	ControllerExtension::$google_analytics_code = 'UA-84547-10';
+}
+
 DocumentationViewer::set_edit_link(
 	'framework',
 	'https://github.com/silverstripe/silverstripe-userhelp-content/edit/%version%/docs/%lang%/%path%',
