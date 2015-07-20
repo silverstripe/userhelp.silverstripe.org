@@ -19,6 +19,7 @@ Config::inst()->update('DocumentationViewer', 'link_base', '');
 Config::inst()->update('DocumentationViewer', 'check_permission', false);
 
 if(Director::isLive()) {
+	Director::forceSSL();
 	ControllerExtension::$google_analytics_code = 'UA-84547-10';
 }
 
