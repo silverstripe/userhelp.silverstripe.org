@@ -10,9 +10,10 @@
 
     "require": {
         "php": ">=5.3.2",
-        "silverstripe/docsviewer": "1.0.1@stable",
-        "silverstripe/framework": "3.1.*@stable",
+        "silverstripe/docsviewer": "dev-develop",
+        "silverstripe/framework": "^3.2",
         "silverstripe/toolbar": "^4.0"
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }

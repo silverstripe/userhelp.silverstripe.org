@@ -13,12 +13,12 @@ DocumentationManifest:
       Path: "src/framework_3.2/docs/"
       Title: "User Help"
       Version: "3.2"
+      Stable: true
       DefaultEntity: true
     -
       Path: "src/framework_3.1/docs/"
       Title: "User Help"
       Version: "3.1"
-      Stable: true
       DefaultEntity: true
     -
       Path: "src/framework_3.0/docs/"

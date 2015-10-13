@@ -1,0 +1,7 @@
+.has_versions .versions {
+	float: left;
+}
+
+#VersionsArchive {
+	float: right;
+}
