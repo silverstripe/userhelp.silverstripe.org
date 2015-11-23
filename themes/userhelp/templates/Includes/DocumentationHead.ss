@@ -21,7 +21,7 @@
 	<link rel="icon" type="image/png" href="$ThemeDir/favicons/favicon-16x16.png" sizes="16x16">
 	<link rel="manifest" href="$ThemeDir/favicons/manifest.json"> <%-- Controls which icon to use for Android Chrome --%>
 	<link rel="mask-icon" href="$ThemeDir/favicons/safari-pinned-tab.svg" color="#5bbad5">
-	<meta name="msapplication-TileColor" content="#005b94">
+	<meta name="msapplication-config" content="$ThemeDir/favicons/browserconfig.xml"> <%-- MS browser config schema --%>
 	<meta name="msapplication-TileImage" content="$ThemeDir/favicons/mstile-144x144.png">
 	<meta name="theme-color" content="#1b354c">
 	
