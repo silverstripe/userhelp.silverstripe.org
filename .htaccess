@@ -30,11 +30,6 @@ ErrorDocument 500 /assets/error-500.html
 	SetEnv HTTP_MOD_REWRITE On
 	RewriteEngine On
 
-	# Redirect requests for $AbsoluteBaseURL/favicon.ico to $AbsoluteBaseURL/$ThemeDir/favicons/favicon.ico
-	RewriteCond %{REQUEST_URI} !^/favicon\.ico [NC]
-	RewriteCond %{REQUEST_URI} favicon\.ico [NC]
-	RewriteRule (.*) http://userhelp.silverstripe.org/themes/userhelp/favicons/favicon.ico [R=301,L]
-
 	RewriteCond %{REQUEST_URI} ^(.*)$
 	RewriteCond %{REQUEST_FILENAME} !-f
 
@@ -66,11 +61,11 @@ ErrorDocument 500 /assets/error-500.html
 FileETag INode MTime
 
 <IfModule mod_expires.c>
-ExpiresActive on
-ExpiresByType image/* "access plus 7 days"
-ExpiresByType text/css "access plus 7 days"
-ExpiresByType application/x-javascript "access plus 7 days"
-ExpiresByType application/javascript "access plus 7 days"
+        ExpiresActive on
+        ExpiresByType image/* "access plus 7 days"
+        ExpiresByType text/css "access plus 7 days"
+        ExpiresByType application/x-javascript "access plus 7 days"
+        ExpiresByType application/javascript "access plus 7 days"
 </IfModule>
 
 <IfModule mod_deflate.c>
