@@ -10,18 +10,18 @@ DocumentationManifest:
   automatic_registration: false
   register_entities:
     -
-      Path: "src/framework_3.2/docs/"
+      Path: "src/userhelp_3.2/docs/"
       Title: "User Help"
       Version: "3.2"
       Stable: true
       DefaultEntity: true
     -
-      Path: "src/framework_3.1/docs/"
+      Path: "src/userhelp_3.1/docs/"
       Title: "User Help"
       Version: "3.1"
       DefaultEntity: true
     -
-      Path: "src/framework_3.0/docs/"
+      Path: "src/userhelp_3.0/docs/"
       Title: "User Help"
       Version: "3.0"
       DefaultEntity: true

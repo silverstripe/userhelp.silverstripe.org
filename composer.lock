@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2336668ff2a4fadbf9f67ff63c780f76",
-    "content-hash": "6725f3caf4485d65a2b5ef61f7b535bb",
+    "hash": "7260e2eddb4a55beb362151c94bfcc08",
+    "content-hash": "de0f30c15485b8b5f44aa7f0d9d9f341",
     "packages": [
         {
             "name": "composer/installers",
@@ -190,16 +190,16 @@
         },
         {
             "name": "silverstripe/docsviewer",
-            "version": "dev-master",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-docsviewer.git",
-                "reference": "2f0cbfe4f675dd3957623055cfbeccd8ebf1bfef"
+                "reference": "786ddd2d7bb7f734db1d1be84dfbb39929eb5324"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-docsviewer/zipball/2f0cbfe4f675dd3957623055cfbeccd8ebf1bfef",
-                "reference": "2f0cbfe4f675dd3957623055cfbeccd8ebf1bfef",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-docsviewer/zipball/786ddd2d7bb7f734db1d1be84dfbb39929eb5324",
+                "reference": "786ddd2d7bb7f734db1d1be84dfbb39929eb5324",
                 "shasum": ""
             },
             "require": {
@@ -227,7 +227,7 @@
                 "documentation",
                 "silverstripe"
             ],
-            "time": "2015-11-17 03:04:08"
+            "time": "2015-11-30 21:19:11"
         },
         {
             "name": "silverstripe/framework",
@@ -370,9 +370,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "silverstripe/docsviewer": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
