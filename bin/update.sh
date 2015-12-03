@@ -55,9 +55,13 @@ function checkout {
 	fi
 }
 
-# core
-checkout 'silverstripe/silverstripe-userhelp-content.git' 'framework' '3.2'
-checkout 'silverstripe/silverstripe-userhelp-content.git' 'framework' '3.1'
-checkout 'silverstripe/silverstripe-userhelp-content.git' 'framework' '3.0'
+#Clear out the src folder
+cd $dir
+rm -rf $dir/src/
+
+# Get the versions of userhelp docs
+checkout 'silverstripe/silverstripe-userhelp-content.git' 'userhelp' '3.2'
+checkout 'silverstripe/silverstripe-userhelp-content.git' 'userhelp' '3.1'
+checkout 'silverstripe/silverstripe-userhelp-content.git' 'userhelp' '3.0'
 
 echo "Done."
