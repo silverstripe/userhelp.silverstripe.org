@@ -60,8 +60,8 @@ cd $dir
 rm -rf $dir/src/
 
 # Get the versions of userhelp docs
-checkout 'silverstripe/silverstripe-userhelp-content.git' 'userhelp' '3.2'
-checkout 'silverstripe/silverstripe-userhelp-content.git' 'userhelp' '3.1'
-checkout 'silverstripe/silverstripe-userhelp-content.git' 'userhelp' '3.0'
+checkout 'camfindlay/silverstripe-userhelp-content.git' 'userhelp' '3.2'
+checkout 'camfindlay/silverstripe-userhelp-content.git' 'userhelp' '3.1'
+checkout 'camfindlay/silverstripe-userhelp-content.git' 'userhelp' '3.0'
 
 echo "Done."
