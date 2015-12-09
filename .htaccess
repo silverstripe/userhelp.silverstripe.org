@@ -37,9 +37,8 @@ ErrorDocument 500 /assets/error-500.html
 	# See https://github.com/silverstripe/silverstripe-docsviewer/issues/27
 	RewriteRule ^DocumentationSearchForm/?(.*)$ /dev/docs/DocumentationSearchForm/$1 [R=301,L]
 
-	# Workflow docs used to be part of the userhelp, but are now managed by the module itself
-	# TODO Unify modules into userhelp docs for a more consistent look and feel
-	RewriteRule ^framework/en/.*/?for-website-content-editors/workflow https://github.com/silverstripe-australia/advancedworkflow/blob/master/HOWTO.md [R=301,L]
+	#Strip .md extension
+    RewriteRule ^(.*)\.md/?$ /$1 [R=301,L]
 
 	RewriteRule ^en/([0-9]\.[0-9])/basic-overview/?$ /en/$1/overview [R=301,L]
     RewriteRule ^en/([0-9]\.[0-9])/for-website-administrators/?$ /en/$1/site_management [R=301,L]
