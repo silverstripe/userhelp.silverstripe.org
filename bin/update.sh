@@ -67,6 +67,7 @@ checkout 'camfindlay/silverstripe-userhelp-content.git' 'userhelp' '3.0'
 # Get the supported module versions
 checkout 'camfindlay/silverstripe-blog.git' 'blog' 'master'
 checkout 'camfindlay/silverstripe-userforms.git' 'userforms' 'master'
-
+checkout 'camfindlay/silverstripe-translatable.git' 'translatable' '2.0' #3.1 compatible
+checkout 'camfindlay/silverstripe-translatable.git' 'translatable' '2.1' #3.2 compatible
 
 echo "Done."
