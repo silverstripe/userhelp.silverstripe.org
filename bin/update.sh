@@ -70,5 +70,6 @@ checkout 'camfindlay/silverstripe-userforms.git' 'userforms' 'master'
 checkout 'camfindlay/silverstripe-translatable.git' 'translatable' '2.0' #3.1 compatible
 checkout 'camfindlay/silverstripe-translatable.git' 'translatable' '2.1' #3.2 compatible
 checkout 'mandrew/silverstripe-subsites.git' 'subsites' '1.0'
+checkout 'mandrew/silverstripe-secureassets.git' 'secureassets' 'master'
 
 echo "Done."
