@@ -64,16 +64,17 @@ checkout 'camfindlay/silverstripe-userhelp-content.git' 'userhelp' '3.2'
 checkout 'camfindlay/silverstripe-userhelp-content.git' 'userhelp' '3.1'
 checkout 'camfindlay/silverstripe-userhelp-content.git' 'userhelp' '3.0'
 
-# Get the supported module versions
+# Get the supported module versions - we look at latest stable version branch for the version of CMS.
 checkout 'camfindlay/silverstripe-blog.git' 'blog' 'master'
 checkout 'camfindlay/silverstripe-userforms.git' 'userforms' 'master'
 checkout 'camfindlay/silverstripe-translatable.git' 'translatable' '2.0' #3.1 compatible
 checkout 'camfindlay/silverstripe-translatable.git' 'translatable' '2.1' #3.2 compatible
 checkout 'camfindlay/advancedworkflow.git' 'advancedworkflow' 'master'
 
-checkout 'mandrew/silverstripe-subsites.git' 'subsites' '1.0'
+checkout 'mandrew/silverstripe-subsites.git' 'subsites' '1.0' #3.1 compatible
+checkout 'mandrew/silverstripe-subsites.git' 'subsites' '1.1' #3.2 compatible
 checkout 'mandrew/silverstripe-secureassets.git' 'secureassets' 'master'
-checkout 'mandrew/silverstripe-forum.git' 'forum' '0.8' #3.1 compatible
+checkout 'mandrew/silverstripe-forum.git' 'forum' '0.8'
 
 
 echo "Done."
