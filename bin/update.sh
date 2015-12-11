@@ -75,6 +75,7 @@ checkout 'mandrew/silverstripe-subsites.git' 'subsites' '1.0' #3.1 compatible
 checkout 'mandrew/silverstripe-subsites.git' 'subsites' '1.1' #3.2 compatible
 checkout 'mandrew/silverstripe-secureassets.git' 'secureassets' 'master'
 checkout 'mandrew/silverstripe-forum.git' 'forum' '0.8'
+checkout 'mandrew/silverstripe-taxonomy.git' 'taxonomy' 'master'
 
 
 echo "Done."
