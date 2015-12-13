@@ -77,6 +77,6 @@ checkout 'mandrew/silverstripe-secureassets.git' 'secureassets' 'master'
 checkout 'mandrew/silverstripe-forum.git' 'forum' '0.8'
 checkout 'mandrew/silverstripe-taxonomy.git' 'taxonomy' 'master'
 checkout 'mandrew/silverstripe-iframe.git' 'iframe' 'master'
-
+checkout 'mandrew/silverstripe-registry.git' 'registry' 'master'
 
 echo "Done."
