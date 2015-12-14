@@ -70,6 +70,8 @@ checkout 'camfindlay/silverstripe-userforms.git' 'userforms' 'master'
 checkout 'camfindlay/silverstripe-translatable.git' 'translatable' '2.0' #3.1 compatible
 checkout 'camfindlay/silverstripe-translatable.git' 'translatable' '2.1' #3.2 compatible
 checkout 'camfindlay/advancedworkflow.git' 'advancedworkflow' 'master'
+checkout 'camfindlay/silverstripe-versionedfiles.git' 'versionedfiles' 'master'
+
 
 checkout 'mandrew/silverstripe-subsites.git' 'subsites' '1.0' #3.1 compatible
 checkout 'mandrew/silverstripe-subsites.git' 'subsites' '1.1' #3.2 compatible
@@ -78,6 +80,6 @@ checkout 'mandrew/silverstripe-forum.git' 'forum' '0.8'
 checkout 'mandrew/silverstripe-taxonomy.git' 'taxonomy' 'master'
 checkout 'mandrew/silverstripe-iframe.git' 'iframe' 'master'
 checkout 'mandrew/silverstripe-registry.git' 'registry' 'master'
-checkout 'mandrew/silverstripe-versionfeed' 'versionfeed' 'master'
+checkout 'mandrew/silverstripe-versionfeed.git' 'versionfeed' 'master'
 
 echo "Done."
