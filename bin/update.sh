@@ -81,5 +81,6 @@ checkout 'mandrew/silverstripe-taxonomy.git' 'taxonomy' 'master'
 checkout 'mandrew/silverstripe-iframe.git' 'iframe' 'master'
 checkout 'mandrew/silverstripe-registry.git' 'registry' 'master'
 checkout 'mandrew/silverstripe-versionfeed.git' 'versionfeed' 'master'
+checkout 'mandrew/silverstripe-securityreport.git' 'securityreport' 'master'
 
 echo "Done."
