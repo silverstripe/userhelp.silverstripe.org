@@ -37,9 +37,25 @@ ErrorDocument 500 /assets/error-500.html
 	# See https://github.com/silverstripe/silverstripe-docsviewer/issues/27
 	RewriteRule ^DocumentationSearchForm/?(.*)$ /dev/docs/DocumentationSearchForm/$1 [R=301,L]
 
-	# Workflow docs used to be part of the userhelp, but are now managed by the module itself
-	# TODO Unify modules into userhelp docs for a more consistent look and feel
-	RewriteRule ^framework/en/.*/?for-website-content-editors/workflow https://github.com/silverstripe-australia/advancedworkflow/blob/master/HOWTO.md [R=301,L]
+	#Strip .md extension
+    RewriteRule ^(.*)\.md/?$ /$1 [R=301,L]
+
+	RewriteRule ^en/([0-9]\.[0-9])/basic-overview/?$ /en/$1 [R=301,L]
+    RewriteRule ^en/([0-9]\.[0-9])/for-website-administrators/?$ /en/$1/managing_your_website [R=301,L]
+    RewriteRule ^en/([0-9]\.[0-9])/for-website-content-editors/?$ /en/$1/creating_pages_and_content [R=301,L]
+    RewriteRule ^en/([0-9]\.[0-9])/for-website-content-editors/creating-and-editing-content/?$ /en/$1/creating_pages_and_content [R=301,L]
+    RewriteRule ^en/([0-9]\.[0-9])/for-website-content-editors/forms/?$ /en/$1/optional_features/forms [R=301,L]
+    RewriteRule ^en/([0-9]\.[0-9])/for-website-content-editors/forums/?$ /en/$1/optional_features/forums [R=301,L]
+    RewriteRule ^en/([0-9]\.[0-9])/for-website-content-editors/managing-your-site/?$ /en/$1/creating_pages_and_content/pages [R=301,L]
+    RewriteRule ^en/([0-9]\.[0-9])/for-website-content-editors/web-content-best-practises/?$ /en/$1/creating_pages_and_content/web_content_best_practises [R=301,L]
+    RewriteRule ^en/([0-9]\.[0-9])/for-website-content-editors/working-with-images-and-documents/?$ /en/$1/creating_pages_and_content/working_with_images_and_documents [R=301,L]
+    RewriteRule ^en/([0-9]\.[0-9])/for-website-content-editors/working-with-multiple-sites/?$ /en/$1/optional_features/working_with_multiple_sites [R=301,L]
+    RewriteRule ^en/([0-9]\.[0-9])/for-website-content-editors/working-with-translations/?$ /en/$1/optional_features/working_with_translations [R=301,L]
+    RewriteRule ^en/([0-9]\.[0-9])/introduction-and-logging-in/?$ /en/$1/managing_your_website/logging_in [R=301,L]
+    RewriteRule ^en/([0-9]\.[0-9])/for-website-administrators/setting-up-advancedworkflow/?$ /en/$1/optional_features/setting_up_advancedworkflow [R=301,L]
+    RewriteRule ^en/([0-9]\.[0-9])/for-website-administrators/changing-and-managing-users/?$ /en/$1/managing_your_website/changing_and_managing_users [R=301,L]
+    RewriteRule ^en/([0-9]\.[0-9])/for-website-administrators/managing-roles-and-permissions/?$ /en/$1/managing_your_website/managing_roles_and_permissions [R=301,L]
+    RewriteRule ^en/([0-9]\.[0-9])/for-website-content-editors/blogs/?$ /en/$1/optional_features/blogs [R=301,L]
 
 	# Legacy rewrites
 	RewriteCond %{REQUEST_FILENAME} !-f
