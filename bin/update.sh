@@ -70,7 +70,7 @@ checkout 'camfindlay/silverstripe-userforms.git' 'userforms' 'master'
 checkout 'camfindlay/silverstripe-translatable.git' 'translatable' '2.0' #3.1 compatible
 checkout 'camfindlay/silverstripe-translatable.git' 'translatable' '2.1' #3.2 compatible
 checkout 'camfindlay/advancedworkflow.git' 'advancedworkflow' 'master'
-checkout 'silverstripe/silverstripe-versionedfiles.git' 'versionedfiles' 'master'
+checkout 'silverstripe-australia/silverstripe-versionedfiles.git' 'versionedfiles' 'master'
 
 
 checkout 'mandrew/silverstripe-subsites.git' 'subsites' '1.0' #3.1 compatible
