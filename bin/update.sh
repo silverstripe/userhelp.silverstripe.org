@@ -82,4 +82,8 @@ checkout 'mandrew/silverstripe-iframe.git' 'iframe' 'master'
 checkout 'mandrew/silverstripe-versionfeed.git' 'versionfeed' 'master'
 checkout 'mandrew/silverstripe-securityreport.git' 'securityreport' 'master'
 
+checkout 'silverstripe/silverstripe-contentreview.git' 'contentreview' 'master'
+checkout 'silverstripe/silverstripe-sitewidecontent-report.git' 'sitewidecontent-report' 'master'
+
+
 echo "Done."
