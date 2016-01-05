@@ -66,7 +66,7 @@ checkout 'camfindlay/silverstripe-userhelp-content.git' 'userhelp' '3.0'
 
 # Get the supported module versions - we look at latest stable version branch for the version of CMS.
 checkout 'silverstripe-australia/silverstripe-versionedfiles.git' 'versionedfiles' 'master'
-checkout 'silverstripe/silverstripe-registry.git' 'registry' 'master'
+checkout 'silverstripe-labs/silverstripe-registry.git' 'registry' 'master'
 checkout 'camfindlay/silverstripe-blog.git' 'blog' 'master'
 checkout 'camfindlay/silverstripe-userforms.git' 'userforms' 'master'
 checkout 'camfindlay/silverstripe-translatable.git' 'translatable' '2.0' #3.1 compatible
