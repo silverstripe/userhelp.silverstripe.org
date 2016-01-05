@@ -67,6 +67,10 @@ checkout 'camfindlay/silverstripe-userhelp-content.git' 'userhelp' '3.0'
 # Get the supported module versions - we look at latest stable version branch for the version of CMS.
 checkout 'silverstripe-australia/silverstripe-versionedfiles.git' 'versionedfiles' 'master'
 checkout 'silverstripe-labs/silverstripe-registry.git' 'registry' 'master'
+checkout 'silverstripe/silverstripe-forum.git' 'forum' '0.8'
+checkout 'silverstripe/silverstripe-contentreview.git' 'contentreview' 'master'
+checkout 'silverstripe/silverstripe-sitewidecontent-report.git' 'sitewidecontent-report' 'master'
+
 checkout 'camfindlay/silverstripe-blog.git' 'blog' 'master'
 checkout 'camfindlay/silverstripe-userforms.git' 'userforms' 'master'
 checkout 'camfindlay/silverstripe-translatable.git' 'translatable' '2.0' #3.1 compatible
@@ -76,14 +80,12 @@ checkout 'camfindlay/advancedworkflow.git' 'advancedworkflow' 'master'
 checkout 'mandrew/silverstripe-subsites.git' 'subsites' '1.0' #3.1 compatible
 checkout 'mandrew/silverstripe-subsites.git' 'subsites' '1.1' #3.2 compatible
 checkout 'mandrew/silverstripe-secureassets.git' 'secureassets' 'master'
-checkout 'mandrew/silverstripe-forum.git' 'forum' '0.8'
 checkout 'mandrew/silverstripe-taxonomy.git' 'taxonomy' 'master'
 checkout 'mandrew/silverstripe-iframe.git' 'iframe' 'master'
 checkout 'mandrew/silverstripe-versionfeed.git' 'versionfeed' 'master'
 checkout 'mandrew/silverstripe-securityreport.git' 'securityreport' 'master'
 
-checkout 'silverstripe/silverstripe-contentreview.git' 'contentreview' 'master'
-checkout 'silverstripe/silverstripe-sitewidecontent-report.git' 'sitewidecontent-report' 'master'
+
 
 
 echo "Done."
