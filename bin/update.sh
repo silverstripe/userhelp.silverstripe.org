@@ -71,8 +71,8 @@ checkout 'silverstripe-labs/silverstripe-registry.git' 'registry' 'master'
 checkout 'silverstripe/silverstripe-forum.git' 'forum' '0.8'
 checkout 'silverstripe/silverstripe-contentreview.git' 'contentreview' 'master'
 checkout 'silverstripe/silverstripe-sitewidecontent-report.git' 'sitewidecontent-report' 'master'
+checkout 'silverstripe/silverstripe-blog.git' 'blog' 'master'
 
-checkout 'camfindlay/silverstripe-blog.git' 'blog' 'master'
 checkout 'camfindlay/silverstripe-userforms.git' 'userforms' 'master'
 checkout 'camfindlay/silverstripe-translatable.git' 'translatable' '2.0' #3.1 compatible
 checkout 'camfindlay/silverstripe-translatable.git' 'translatable' '2.1' #3.2 compatible
