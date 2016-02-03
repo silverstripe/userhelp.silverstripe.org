@@ -4,7 +4,11 @@ global $project;
 $project = 'app';
 
 global $database;
-$database = 'SS_userhelp';
+if(defined('SS_DATABASE_NAME') && SS_DATABASE_NAME) {
+	$database = SS_DATABASE_NAME;
+} else {
+	$database = 'SS_userhelp';
+}
 
 require_once('conf/ConfigureFromEnv.php');
 
