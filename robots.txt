@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /admin
+Disallow: /assets/src
+Crawl-Delay: 4
