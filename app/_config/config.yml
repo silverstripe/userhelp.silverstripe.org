@@ -10,3 +10,5 @@ StaticExporter:
 Controller:
   extensions:
     - ControllerExtension
+UpdateTask:
+  path: "/Sites/userhelp.silverstripe.org/assets"
