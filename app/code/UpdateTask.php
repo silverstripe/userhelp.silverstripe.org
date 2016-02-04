@@ -33,7 +33,7 @@ class UpdateTask extends BuildTask
 
         foreach ($repositories as $repository) {
             $this->cloneRepository($repository);
-            $this->cleanRepository($repository);
+            //$this->cleanRepository($repository);
         }
     }
 
