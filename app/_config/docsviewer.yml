@@ -5,7 +5,7 @@ after: docsviewer#docsviewer
 DocumentationViewer:
   google_analytics_code: 'UA-84547-10'
 DocumentationSearch:
-  enabled: true  
+  enabled: true
 DocumentationManifest:
   automatic_registration: false
   register_entities:
