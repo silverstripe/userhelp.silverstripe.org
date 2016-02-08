@@ -6,7 +6,7 @@ class UpdateDocsCronTask implements CronTask {
 	 * @return string
 	 */
 	public function getSchedule() {
-		return "05 * * * *";
+		return "0 20 * * *";
 	}
 
 	/**
@@ -14,6 +14,14 @@ class UpdateDocsCronTask implements CronTask {
 	 * @return BuildTask
 	 */
 	public function process() {
-		UpdateTask::init();
+
+		//rebuild the docs
+		$docstask = new UpdateTask();
+		$docstask->run(null);
+
+		//reindex the search
+		$searchtask = new RebuildLuceneDocsIndex();
+		$searchtask->run(null);
+
 	}
 }
