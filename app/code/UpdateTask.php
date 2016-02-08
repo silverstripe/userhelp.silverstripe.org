@@ -53,7 +53,8 @@ class UpdateTask extends BuildTask
      */
     private function printLine($message)
     {
-        print $message . "\n";
+        $this->eol = Director::is_cli() ? PHP_EOL : "<br>";
+        print $message . $this->eol;
         flush();
     }
 
@@ -89,7 +90,7 @@ class UpdateTask extends BuildTask
         }
 
         if (!file_exists("{$path}/src/{$folder}_{$branch}")) {
-            $this->printLine("cloning " . $remote);
+            $this->printLine("cloning " . $remote . "/" . $branch);
 
             chdir("{$path}/src");
             exec("git clone -q git://github.com/{$remote}.git {$folder}_{$branch} --quiet");
