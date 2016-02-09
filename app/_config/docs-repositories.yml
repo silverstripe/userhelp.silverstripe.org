@@ -59,30 +59,30 @@ UpdateTask:
       - translatable
       - "2.1"
     -
-      - mandrew/silverstripe-subsites
+      - silverstripe/silverstripe-subsites
       - subsites
       - "1.0"
     -
-      - mandrew/silverstripe-subsites
+      - silverstripe/silverstripe-subsites
       - subsites
       - "1.1"
     -
-      - mandrew/silverstripe-secureassets
+      - silverstripe-labs/silverstripe-secureassets
       - secureassets
       - master
     -
-      - mandrew/silverstripe-taxonomy
+      - silverstripe-labs/silverstripe-taxonomy
       - taxonomy
       - master
     -
-      - mandrew/silverstripe-iframe
+      - silverstripe-labs/silverstripe-iframe
       - iframe
       - master
     -
-      - mandrew/silverstripe-versionfeed
+      - silverstripe-labs/silverstripe-versionfeed
       - versionfeed
       - master
     -
-      - mandrew/silverstripe-securityreport
+      - silverstripe-labs/silverstripe-securityreport
       - securityreport
       - master
