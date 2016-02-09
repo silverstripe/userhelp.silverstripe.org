@@ -1,0 +1,88 @@
+---
+Name: docs-repos
+After:
+  - framework/*
+  - cms/*
+---
+UpdateTask:
+  documentation_repositories:
+    -
+      - silverstripe/silverstripe-userhelp-content
+      - userhelp
+      - "3.2"
+    -
+      - silverstripe/silverstripe-userhelp-content
+      - userhelp
+      - "3.1"
+    -
+      - silverstripe/silverstripe-userhelp-content
+      - userhelp
+      - "3.0"
+    -
+      - silverstripe-australia/silverstripe-versionedfiles
+      - versionedfiles
+      - master
+    -
+      - silverstripe-australia/advancedworkflow
+      - advancedworkflow
+      - master
+    -
+      - silverstripe-labs/silverstripe-registry
+      - registry
+      - master
+    -
+      - silverstripe/silverstripe-forum
+      - forum
+      - "0.8"
+    -
+      - silverstripe/silverstripe-contentreview
+      - contentreview
+      - master
+    -
+      - silverstripe/silverstripe-sitewidecontent-report
+      - sitewidecontent-report
+      - master
+    -
+      - silverstripe/silverstripe-blog
+      - blog
+      - master
+    -
+      - camfindlay/silverstripe-userforms
+      - userforms
+      - master
+    -
+      - camfindlay/silverstripe-translatable
+      - translatable
+      - "2.0"
+    -
+      - camfindlay/silverstripe-translatable
+      - translatable
+      - "2.1"
+    -
+      - silverstripe/silverstripe-subsites
+      - subsites
+      - "1.0"
+    -
+      - silverstripe/silverstripe-subsites
+      - subsites
+      - "1.1"
+    -
+      - silverstripe-labs/silverstripe-secureassets
+      - secureassets
+      - master
+    -
+      - silverstripe-labs/silverstripe-taxonomy
+      - taxonomy
+      - master
+    -
+      - silverstripe-labs/silverstripe-iframe
+      - iframe
+      - master
+    -
+      - silverstripe-labs/silverstripe-versionfeed
+      - versionfeed
+      - master
+    -
+      - silverstripe-labs/silverstripe-securityreport
+      - securityreport
+      - master
