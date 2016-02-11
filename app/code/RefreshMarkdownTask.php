@@ -1,6 +1,6 @@
 <?php
 
-class UpdateTask extends BuildTask
+class RefreshMarkdownTask extends BuildTask
 {
     /**
      * @var array
@@ -8,16 +8,15 @@ class UpdateTask extends BuildTask
      */
     private static $documentation_repositories;
 
+    /**
+     * @var string
+     */
+    protected $title = "Refresh markdown files";
 
     /**
      * @var string
      */
-    protected $title = "Updates source markdown files";
-
-    /**
-     * @var string
-     */
-    protected $description = "Downloads and cleans source markdown documentation files";
+    protected $description = "Downloads a fresh version of markdown documentation files from source";
 
     /**
      * @var bool
@@ -26,11 +25,10 @@ class UpdateTask extends BuildTask
 
     /**
      * @var SS_HTTPRequest $request
-     *
      */
     public function run($request)
     {
-        $this->printLine("updating...");
+        $this->printLine("refreshing markdown files...");
 
         $repositories = $this->getRepositories();
 
@@ -66,18 +64,16 @@ class UpdateTask extends BuildTask
      */
     private function getRepositories()
     {
-        if($repos = $this->config()->documentation_repositories)
-        {
+        if($repos = $this->config()->documentation_repositories) {
             return $repos;
         } else {
-            user_error("You need to set 'UpdateTask:documentation_repositories' array in your yaml configuration", E_USER_WARNING);
+            user_error("You need to set 'RefreshMarkdownTask:documentation_repositories' array in a yaml configuration file", E_USER_WARNING);
             return null;
         }
     }
 
     /**
      * @param array $repository
-     *
      */
     private function cloneRepository(array $repository)
     {
@@ -85,13 +81,8 @@ class UpdateTask extends BuildTask
 
         $path = $this->getPath();
 
-        if (!file_exists("{$path}/src")) {
-            mkdir("{$path}/src");
-        }
-
-        if (file_exists("{$path}/src/{$folder}_{$branch}")) {
-            exec("rm -rf {$path}/src/{$folder}_{$branch}");
-        }
+        exec("mkdir -p {$path}/src");
+        exec("rm -rf {$path}/src/{$folder}_{$branch}");
 
         $this->printLine("cloning " . $remote . "/" . $branch);
 
@@ -111,11 +102,11 @@ class UpdateTask extends BuildTask
      */
     private function cleanRepository(array $repository)
     {
-        $files = array_merge(glob("*"), glob(".*"));
+        $paths = array_merge(glob("*"), glob(".*"));
 
-        foreach ($files as $file) {
-            if ($file !== "docs" && $file !== "." && $file !== "..") {
-                exec("rm -rf {$file}");
+        foreach ($paths as $path) {
+            if ($path !== "docs" && $path !== "." && $path !== "..") {
+                exec("rm -rf {$path}");
             }
         }
     }
