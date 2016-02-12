@@ -7,7 +7,7 @@ class DocsCronTask implements CronTask
      */
     public function getSchedule() 
     {
-        return "0 20 * * *";
+        return "0 8 * * *";
     }
 
     /**
