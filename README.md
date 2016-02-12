@@ -1,7 +1,7 @@
 # userhelp.silverstripe.org
 
 This is the source code powering https://userhelp.silverstripe.org.  It primarily
-consists of the SilverStripe framework and [docsviewer](https://github.com/silverstripe/silverstripe-docsviewer)
+consists of the SilverStripe framework and the [docsviewer](https://github.com/silverstripe/silverstripe-docsviewer)
 module with minimal configuration.
 
 For adding functionality or editing the style of the documentation see the 
@@ -12,23 +12,22 @@ For adding functionality or editing the style of the documentation see the
 To set up a test instance:
 
  * Clone this repository to a LAMP server.
- * Install [Composer](http://userhelp.silverstripe.org/framework/en/installation/composer)
+ * Install [Composer](http://userhelp.silverstripe.org/framework/en/installation/composer).
  * Install [sake](https://docs.silverstripe.org/en/developer_guides/cli/).
  * After installing composer run `composer install --prefer-source` to grab the modules.
- * Run the docs crontask in the browser `dev/tasks/DocsCronTask` to
-   check out the documentation repositories, which builds the docs
-   (this will take a while the first time it is run) and then updates
-   the Lucene search index. If you have sake installed then run the
-   build tasks directly, first run `sake dev/tasks/RefreshMarkdownTask
-   flush=1` and then run `sake dev/tasks/RebuildLuceneDocsIndex
-   flush=1` to rebuild the search index.
- * Make sure to flush the cache for markdown content to show up
+ * Run the docs crontask in the browser `dev/tasks/UpdateDocsCronTask`
+   to download all fresh markdown documentation files and reindex them. Note: this
+   will take some time to run. Alternatively, you can use sake
+   to perform these tasks by firstly running the command `sake
+   dev/tasks/RefreshMarkdownTask flush=1` and secondly `sake
+   dev/tasks/RebuildLuceneDocsIndex flush=1`.
+ * Make sure to flush the cache for markdown content to show up.
 
 ## Source Documentation Files
 
 Documentation for each module is stored on the filesystem via a full git clone
 of the module to the `assets/src/` subdirectory. These checkouts are ignored from this repository 
-to allow for easier updating and to keep this project small. For the main documentation a branch
+to allow for easier updating and to keep this project small. For the main documentation, a branch
  is used for each minor version of SilverStripe CMS.
 
 To update or download the source documentation at any time run the following
@@ -38,8 +37,8 @@ BuildTask command with sake:
 	sake dev/tasks/RefreshMarkdownTask flush=1
 
 This build task will download / update each module as listed
-in the `app/_config/docs-repositories.yml` file. Running `sake dev/tasks/RebuildLuceneDocsIndex flush=1` will also create a search index and reindex the documentation 
-so that searching works (part of the docsviewer module that uses Lucene search). 
+in the `app/_config/docs-repositories.yml` file. Running `sake dev/tasks/RebuildLuceneDocsIndex flush=1` will then create a search index and reindex the documentation 
+to facilitate searching.
 
 Once the build task has executed and downloaded the latest files,
 those files are registered along with the module version the folder relates to
@@ -67,15 +66,15 @@ their way onto the userhelp.silverstripe.org site in the next release.
 
 The content for userhelp.silverstripe.org is stored in a separate repository:
 [https://github.com/silverstripe/silverstripe-userhelp-content](https://github.com/silverstripe/silverstripe-userhelp-content). 
-If you wish to edit the documentation content, submit a pull request on that Github project. Updates 
-to the content are synced regularly with userhelp.silverstripe.org via a cron job.
+If you wish to edit the documentation content, submit a pull request to that Github project. Updates 
+to the content are synced regularly with userhelp.silverstripe.org via the cron job `UpdateDocsCronTask`.
 
 ## Cron job
 
-The cron job includes tasks to keep userhelp.silverstripe.org up to date with the latest code. The crontask `app/code/DocsCronTask.php` initiates tasks which fetch the latest documentation for each module from git and rebuilds the search indexes.
+The cron job `UpdateDocsCronTask` includes tasks that fetch the latest documentation for each module from git and rebuilds the search indexes.
 
 	public function getSchedule() {
-    return "0 20 * * *"; // runs process() function every day at 8pm
+    return "0 8 * * *"; // runs process() function every day at 8AM
   }
 
 ## Deployment
