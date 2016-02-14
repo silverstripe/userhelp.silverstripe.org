@@ -1,7 +1,7 @@
 # userhelp.silverstripe.org
 
 This is the source code powering https://userhelp.silverstripe.org.  It primarily
-consists of the SilverStripe framework and [docsviewer](https://github.com/silverstripe/silverstripe-docsviewer)
+consists of the SilverStripe framework and the [docsviewer](https://github.com/silverstripe/silverstripe-docsviewer)
 module with minimal configuration.
 
 For adding functionality or editing the style of the documentation see the 
@@ -12,38 +12,43 @@ For adding functionality or editing the style of the documentation see the
 To set up a test instance:
 
  * Clone this repository to a LAMP server.
- * Install [Composer](http://userhelp.silverstripe.org/framework/en/installation/composer)
+ * Install [Composer](http://userhelp.silverstripe.org/framework/en/installation/composer).
+ * Install [sake](https://docs.silverstripe.org/en/developer_guides/cli/).
  * After installing composer run `composer install --prefer-source` to grab the modules.
- * Run "make update" to check out the repositories from which is builds the
- docs (this will take a while the first time)
- * Make sure to flush the cache for markdown content to show up
+ * Run the docs crontask in the browser `dev/tasks/UpdateDocsCronTask`
+   to download all fresh markdown documentation files and reindex them. Note: this
+   will take some time to run. Alternatively, you can use sake
+   to perform these tasks by firstly running the command `sake
+   dev/tasks/RefreshMarkdownTask flush=1` and secondly `sake
+   dev/tasks/RebuildLuceneDocsIndex flush=1`.
+ * Make sure to flush the cache for markdown content to show up.
 
 ## Source Documentation Files
 
 Documentation for each module is stored on the filesystem via a full git clone
-of the module to the `src/` subdirectory. These checkouts are ignored from this repository 
-to allow for easier updating and to keep this project small. For the main documentation a branch
+of the module to the `assets/src/` subdirectory. These checkouts are ignored from this repository 
+to allow for easier updating and to keep this project small. For the main documentation, a branch
  is used for each minor version of SilverStripe CMS.
 
 To update or download the source documentation at any time run the following
-make command in your terminal:
+BuildTask command with sake:
 
 	cd /Sites/userhelp.silverstripe.org/
-	make update
+	sake dev/tasks/RefreshMarkdownTask flush=1
 
-`make update` will call bin/update.sh to download / update each module as listed
-in the bin/update.sh file. This will also create a search index and reindex the documentation 
-so that searching works (part of the docsviewer module that uses Lucene search). 
+This build task will download / update each module as listed
+in the `app/_config/docs-repositories.yml` file. Running `sake dev/tasks/RebuildLuceneDocsIndex flush=1` will then create a search index and reindex the documentation 
+to facilitate searching.
 
-Once the `make update` command has executed and downloaded the latest files,
-those files are registered along with the module version the folder relates to.
+Once the build task has executed and downloaded the latest files,
+those files are registered along with the module version the folder relates to
 through the `app/_config/docsviewer.yml` file.
 
 ```yaml
 DocumentationManifest:
   register_entities:
     -
-      Path: "src/userhelp_3.2/docs/"
+      Path: "assets/src/userhelp_3.2/docs/"
       Title: "User Help"
       Version: "3.2"
       Stable: true
@@ -61,18 +66,17 @@ their way onto the userhelp.silverstripe.org site in the next release.
 
 The content for userhelp.silverstripe.org is stored in a separate repository:
 [https://github.com/silverstripe/silverstripe-userhelp-content](https://github.com/silverstripe/silverstripe-userhelp-content). 
-If you wish to edit the documentation content, submit a pull request on that Github project. Updates 
-to the content are synced regularly with userhelp.silverstripe.org via a cron job.
+If you wish to edit the documentation content, submit a pull request to that Github project. Updates 
+to the content are synced regularly with userhelp.silverstripe.org via the cron job `UpdateDocsCronTask`.
 
 ## Cron job
 
-The cron job keeps userhelp.silverstripe.org up to date with the latest code. This
-cron task calls `make update`, a script that fetches the latest documentation
-for each module from git and rebuilds the search indexes.
+The cron job `UpdateDocsCronTask` includes tasks that fetch the latest documentation for each module from git and rebuilds the search indexes.
 
-	05 * * * * sites make -f /sites/userhelp.silverstripe.org/www/Makefile -C /sites/userhelp.silverstripe.org/www update
+	public function getSchedule() {
+    return "0 8 * * *"; // runs process() function every day at 8AM
+  }
 
 ## Deployment
 
-Deploy is via the SilverStripe Platform deployment tool (note: the site is not currently running on SilverStripe Platform and has a custom environment).
-This requires someone internally at SilverStripe Ltd. to carry out deploymets for new features (the documentation however automatically updates).
+Deployment is via the SilverStripe Platform deployment tool and uses StackShare.
