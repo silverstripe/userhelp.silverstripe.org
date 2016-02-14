@@ -38,7 +38,7 @@ class RefreshMarkdownTask extends BuildTask
         }
     }
 
-    /**
+    /** 
      * @return string
      */
     private function getPath()
@@ -88,7 +88,6 @@ class RefreshMarkdownTask extends BuildTask
 
         chdir("{$path}/src");
         exec("git clone -q git://github.com/{$remote}.git {$folder}_{$branch} --quiet");
-
 
         chdir("{$path}/src/{$folder}_{$branch}");
         exec("git fetch origin");
