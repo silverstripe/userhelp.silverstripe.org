@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "36c809c6a7f5ce32cc2fdad739748663",
-    "content-hash": "8856a231e5f9658c8f3a7a7d6dffbbcc",
+    "hash": "625dc20b1e79c408feb6a9e48904bb25",
+    "content-hash": "84f1be074bb8e48eb1848c3c51d5d2be",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -72,20 +72,20 @@
         },
         {
             "name": "composer/installers",
-            "version": "v1.0.22",
+            "version": "v1.0.23",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "bd9b14f094c89c8b5804a4e41edeb7853bb85046"
+                "reference": "6213d900e92647831f7a406d5c530ea1f3d4360e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/bd9b14f094c89c8b5804a4e41edeb7853bb85046",
-                "reference": "bd9b14f094c89c8b5804a4e41edeb7853bb85046",
+                "url": "https://api.github.com/repos/composer/installers/zipball/6213d900e92647831f7a406d5c530ea1f3d4360e",
+                "reference": "6213d900e92647831f7a406d5c530ea1f3d4360e",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "1.0.0"
+                "composer-plugin-api": "^1.0"
             },
             "replace": {
                 "roundcube/plugin-installer": "*",
@@ -166,7 +166,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2015-10-29 23:28:48"
+            "time": "2016-01-27 12:54:22"
         },
         {
             "name": "doctrine/cache",
@@ -417,6 +417,45 @@
             "time": "2015-03-18 18:23:50"
         },
         {
+            "name": "mandrew/silverstripe-quickfeedback",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mandrew/silverstripe-quickfeedback.git",
+                "reference": "1a0807630b7bd856f05d1d4580784cd7781a581b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mandrew/silverstripe-quickfeedback/zipball/1a0807630b7bd856f05d1d4580784cd7781a581b",
+                "reference": "1a0807630b7bd856f05d1d4580784cd7781a581b",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/framework": "^3.2"
+            },
+            "type": "silverstripe-module",
+            "extra": {
+                "installer-name": "quickfeedback"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Andrewartha",
+                    "email": "michael@silverstripe.com"
+                }
+            ],
+            "description": "Creates a quick yes/no feedback form which can be added at the bottom of your site",
+            "keywords": [
+                "feedback",
+                "member",
+                "silverstripe"
+            ],
+            "time": "2016-02-14 21:07:29"
+        },
+        {
             "name": "mtdowling/cron-expression",
             "version": "v1.0.4",
             "source": {
@@ -510,16 +549,16 @@
         },
         {
             "name": "silverstripe/docsviewer",
-            "version": "1.2.0",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-docsviewer.git",
-                "reference": "786ddd2d7bb7f734db1d1be84dfbb39929eb5324"
+                "reference": "cf7505b340966252d9fef504dd880c63e6152a9d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-docsviewer/zipball/786ddd2d7bb7f734db1d1be84dfbb39929eb5324",
-                "reference": "786ddd2d7bb7f734db1d1be84dfbb39929eb5324",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-docsviewer/zipball/cf7505b340966252d9fef504dd880c63e6152a9d",
+                "reference": "cf7505b340966252d9fef504dd880c63e6152a9d",
                 "shasum": ""
             },
             "require": {
@@ -547,7 +586,7 @@
                 "documentation",
                 "silverstripe"
             ],
-            "time": "2015-11-30 21:19:11"
+            "time": "2016-02-06 00:54:31"
         },
         {
             "name": "silverstripe/dynamodb",
@@ -641,16 +680,16 @@
         },
         {
             "name": "silverstripe/toolbar",
-            "version": "4.1.0",
+            "version": "4.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-globaltoolbar.git",
-                "reference": "108fc37a26d5c96780a4c4c29a79dbcc79fb9c70"
+                "reference": "74111995b046d7fffc372ad26b05ee6dfd62604d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-globaltoolbar/zipball/108fc37a26d5c96780a4c4c29a79dbcc79fb9c70",
-                "reference": "108fc37a26d5c96780a4c4c29a79dbcc79fb9c70",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-globaltoolbar/zipball/74111995b046d7fffc372ad26b05ee6dfd62604d",
+                "reference": "74111995b046d7fffc372ad26b05ee6dfd62604d",
                 "shasum": ""
             },
             "require": {
@@ -678,10 +717,10 @@
                 "silverstripe"
             ],
             "support": {
-                "source": "https://github.com/silverstripe/silverstripe-globaltoolbar/tree/4.1.0",
+                "source": "https://github.com/silverstripe/silverstripe-globaltoolbar/tree/4.1.1",
                 "issues": "https://github.com/silverstripe/silverstripe-globaltoolbar/issues"
             },
-            "time": "2015-11-03 22:53:02"
+            "time": "2015-12-07 03:08:14"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -745,20 +784,20 @@
         },
         {
             "name": "unclecheese/display-logic",
-            "version": "1.3.1",
+            "version": "1.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/unclecheese/silverstripe-display-logic.git",
-                "reference": "6f8870aeddc56821d00cabdf6d9d9f040ae90c4c"
+                "reference": "43a2213c4748c3f56fc91842ab3a4a3b22caacf0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/unclecheese/silverstripe-display-logic/zipball/6f8870aeddc56821d00cabdf6d9d9f040ae90c4c",
-                "reference": "6f8870aeddc56821d00cabdf6d9d9f040ae90c4c",
+                "url": "https://api.github.com/repos/unclecheese/silverstripe-display-logic/zipball/43a2213c4748c3f56fc91842ab3a4a3b22caacf0",
+                "reference": "43a2213c4748c3f56fc91842ab3a4a3b22caacf0",
                 "shasum": ""
             },
             "require": {
-                "silverstripe/framework": "3.2.*"
+                "silverstripe/framework": "^3.2"
             },
             "replace": {
                 "silverstripe/display-logic": "*"
@@ -785,13 +824,15 @@
                 "logic",
                 "silverstripe"
             ],
-            "time": "2015-10-30 08:29:38"
+            "time": "2015-12-14 22:02:51"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "mandrew/silverstripe-quickfeedback": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
