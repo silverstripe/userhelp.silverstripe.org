@@ -13,7 +13,7 @@
         "silverstripe/framework": "^3.2",
         "silverstripe/toolbar": "^4.0",
         "silverstripe/dynamodb": "^1.1",
-        "mandrew/silverstripe-quickfeedback": "^0.1"
+        "mandrew/silverstripe-quickfeedback": "^0.2"
     },
     "minimum-stability": "dev",
     "prefer-stable": true
