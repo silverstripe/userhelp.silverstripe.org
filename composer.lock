@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "625dc20b1e79c408feb6a9e48904bb25",
-    "content-hash": "84f1be074bb8e48eb1848c3c51d5d2be",
+    "hash": "99b37e38041a943b8ad86a579c318870",
+    "content-hash": "fdbf35f9281777ae0fdf9afc61605f7c",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -418,16 +418,16 @@
         },
         {
             "name": "mandrew/silverstripe-quickfeedback",
-            "version": "dev-master",
+            "version": "0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mandrew/silverstripe-quickfeedback.git",
-                "reference": "1a0807630b7bd856f05d1d4580784cd7781a581b"
+                "reference": "17f988bbe7f9907da8ad73bb8a56d80b2473189f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mandrew/silverstripe-quickfeedback/zipball/1a0807630b7bd856f05d1d4580784cd7781a581b",
-                "reference": "1a0807630b7bd856f05d1d4580784cd7781a581b",
+                "url": "https://api.github.com/repos/mandrew/silverstripe-quickfeedback/zipball/17f988bbe7f9907da8ad73bb8a56d80b2473189f",
+                "reference": "17f988bbe7f9907da8ad73bb8a56d80b2473189f",
                 "shasum": ""
             },
             "require": {
@@ -453,7 +453,7 @@
                 "member",
                 "silverstripe"
             ],
-            "time": "2016-02-14 21:07:29"
+            "time": "2016-02-15 03:54:24"
         },
         {
             "name": "mtdowling/cron-expression",
@@ -830,9 +830,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "mandrew/silverstripe-quickfeedback": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
