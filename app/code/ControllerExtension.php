@@ -21,16 +21,4 @@ class ControllerExtension extends Extension {
 		return (Director::isDev());
 	}
 
-	/**
-	 * Create a URL Segment to use for feedback tool
-	 *
-	 * @return String
-	 */
-	public function getURLSegment(){
-		if ($this->owner->record){
-			return Controller::join_links($this->owner->record->getVersion(),'/',$this->owner->record->getRelativeLink());
-		}
-		return false;
-	}
-
 }
