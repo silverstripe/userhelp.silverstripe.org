@@ -20,4 +20,5 @@ class ControllerExtension extends Extension {
 	public function IsDev() {
 		return (Director::isDev());
 	}
+
 }

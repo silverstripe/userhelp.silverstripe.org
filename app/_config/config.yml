@@ -10,3 +10,9 @@ StaticExporter:
 Controller:
   extensions:
     - ControllerExtension
+Director:
+  rules:
+    'en//QuickFeedbackForm': 'DocumentationViewer'
+QuickFeedbackExtension:
+  redirect_field: true
+  rate_limit: 1
