@@ -7,7 +7,7 @@
 
 	$Content.RAW
 
-	$QuickFeedbackForm
+	<div class="quickfeedback clearfix">$QuickFeedbackForm</div>
 
 	<% include DocumentationNextPrevious %>
 
