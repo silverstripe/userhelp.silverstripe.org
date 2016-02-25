@@ -31,6 +31,9 @@ ErrorDocument 500 /assets/error-500.html
 	SetEnv HTTP_MOD_REWRITE On
 	RewriteEngine On
 
+    RewriteCond %{HTTP_HOST} ^userhelp.silverstripe.com$ [NC]
+    RewriteRule ^(.*)$ https://userhelp.silverstripe.org/$1 [L,R=301]
+
 	RewriteCond %{REQUEST_URI} ^(.*)$
 	RewriteCond %{REQUEST_FILENAME} !-f
 
