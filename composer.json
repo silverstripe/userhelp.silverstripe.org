@@ -9,7 +9,7 @@
     ],
     "require": {
         "php": ">=5.3.2",
-        "silverstripe/docsviewer": "^1.2",
+        "silverstripe/docsviewer": "^1.4",
         "silverstripe/framework": "^3.2",
         "silverstripe/toolbar": "^4.0",
         "silverstripe/dynamodb": "^1.1",
