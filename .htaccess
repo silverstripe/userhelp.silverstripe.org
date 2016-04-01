@@ -51,7 +51,7 @@ ErrorDocument 500 /assets/error-500.html
     RewriteRule ^en/([0-9]\.[0-9])/for-website-content-editors/forms/?$ /en/$1/optional_features/forms [R=301,L]
     RewriteRule ^en/([0-9]\.[0-9])/for-website-content-editors/forums/?$ /en/$1/optional_features/forums [R=301,L]
     RewriteRule ^en/([0-9]\.[0-9])/for-website-content-editors/managing-your-site/?$ /en/$1/creating_pages_and_content/pages [R=301,L]
-    RewriteRule ^en/([0-9]\.[0-9])/for-website-content-editors/web-content-best-practises/?$ /en/$1/creating_pages_and_content/web_content_best_practises [R=301,L]
+    RewriteRule ^en(/[0-9]\.[0-9])?/for-website-content-editors/web-content-best-practises/?$ /en$1/creating_pages_and_content/web_content_best_practises [R=301,L]
     RewriteRule ^en/([0-9]\.[0-9])/for-website-content-editors/working-with-images-and-documents/?$ /en/$1/creating_pages_and_content/working_with_images_and_documents [R=301,L]
     RewriteRule ^en/([0-9]\.[0-9])/for-website-content-editors/working-with-multiple-sites/?$ /en/$1/optional_features/working_with_multiple_sites [R=301,L]
     RewriteRule ^en/([0-9]\.[0-9])/for-website-content-editors/working-with-translations/?$ /en/$1/optional_features/working_with_translations [R=301,L]
