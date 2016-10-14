@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "51391b650e2ab6ce2d046d8bc5cf00ad",
-    "content-hash": "0cacf35f8a2f274a01e6a0a714b0042e",
+    "hash": "98aadf8dd992c1737fcf3f3de0d16300",
+    "content-hash": "2f583fc2a58bf49d1681d8738d6e81cc",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -414,6 +414,7 @@
                 "rest",
                 "web service"
             ],
+            "abandoned": "guzzlehttp/guzzle",
             "time": "2015-03-18 18:23:50"
         },
         {
@@ -504,12 +505,12 @@
             "version": "v1.1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/silverstripe-labs/silverstripe-crontask.git",
+                "url": "https://github.com/silverstripe/silverstripe-crontask.git",
                 "reference": "0db152c8edf448e3ed9797d60e181800ac67ed75"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe-labs/silverstripe-crontask/zipball/0db152c8edf448e3ed9797d60e181800ac67ed75",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-crontask/zipball/0db152c8edf448e3ed9797d60e181800ac67ed75",
                 "reference": "0db152c8edf448e3ed9797d60e181800ac67ed75",
                 "shasum": ""
             },
@@ -549,16 +550,16 @@
         },
         {
             "name": "silverstripe/docsviewer",
-            "version": "1.4.0",
+            "version": "2.0.0-beta2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-docsviewer.git",
-                "reference": "405af6b3778399a7d8334067c3dc6e5ad1b75e11"
+                "reference": "8ae26f12717cea69fb13fd3cb5b0a1367e7828d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-docsviewer/zipball/405af6b3778399a7d8334067c3dc6e5ad1b75e11",
-                "reference": "405af6b3778399a7d8334067c3dc6e5ad1b75e11",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-docsviewer/zipball/8ae26f12717cea69fb13fd3cb5b0a1367e7828d5",
+                "reference": "8ae26f12717cea69fb13fd3cb5b0a1367e7828d5",
                 "shasum": ""
             },
             "require": {
@@ -586,7 +587,7 @@
                 "documentation",
                 "silverstripe"
             ],
-            "time": "2016-02-29 21:35:56"
+            "time": "2016-08-12 11:33:38"
         },
         {
             "name": "silverstripe/dynamodb",
@@ -685,16 +686,16 @@
         },
         {
             "name": "silverstripe/toolbar",
-            "version": "4.1.1",
+            "version": "4.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-globaltoolbar.git",
-                "reference": "74111995b046d7fffc372ad26b05ee6dfd62604d"
+                "reference": "7bba40254fed8fa0ab0750810684a37b6a8e5d2e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-globaltoolbar/zipball/74111995b046d7fffc372ad26b05ee6dfd62604d",
-                "reference": "74111995b046d7fffc372ad26b05ee6dfd62604d",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-globaltoolbar/zipball/7bba40254fed8fa0ab0750810684a37b6a8e5d2e",
+                "reference": "7bba40254fed8fa0ab0750810684a37b6a8e5d2e",
                 "shasum": ""
             },
             "require": {
@@ -722,10 +723,10 @@
                 "silverstripe"
             ],
             "support": {
-                "source": "https://github.com/silverstripe/silverstripe-globaltoolbar/tree/4.1.1",
+                "source": "https://github.com/silverstripe/silverstripe-globaltoolbar/tree/4.2.0",
                 "issues": "https://github.com/silverstripe/silverstripe-globaltoolbar/issues"
             },
-            "time": "2015-12-07 03:08:14"
+            "time": "2016-10-14 02:05:33"
         },
         {
             "name": "symfony/event-dispatcher",
