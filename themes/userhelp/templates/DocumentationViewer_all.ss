@@ -17,9 +17,9 @@
 							<span></span>
 						</a>
 					</div>
-					<a class="breadcrumb" href="$BaseHref">Userhelp</a>
+					<a class="breadcrumb" href="$BaseHref">Documentation</a>
 					<span>/</span>
-					<a class="breadcrumb current">Search</a>
+					<a class="breadcrumb current">Index</a>
 				</p>
 			</div>
 
