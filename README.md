@@ -7,21 +7,15 @@ module with minimal configuration.
 For adding functionality or editing the style of the documentation see the 
 [docsviewer](http://github.com/silverstripe/silverstripe-docsviewer) module.
 
-## Development
+## Getting started
+To set up a local development environment:
 
-To set up a test instance:
-
- * Clone this repository to a LAMP server.
- * Install [Composer](http://userhelp.silverstripe.org/framework/en/installation/composer).
- * Install [sake](https://docs.silverstripe.org/en/developer_guides/cli/).
- * After installing composer run `composer install --prefer-source` to grab the modules.
- * Run the docs crontask in the browser `dev/tasks/UpdateDocsCronTask`
-   to download all fresh markdown documentation files and reindex them. Note: this
-   will take some time to run. Alternatively, you can use sake
-   to perform these tasks by firstly running the command `sake
-   dev/tasks/RefreshMarkdownTask flush=1` and secondly `sake
-   dev/tasks/RebuildLuceneDocsIndex flush=1`.
- * Make sure to flush the cache for markdown content to show up.
+ 1. Use a `_ss_environment.php` file to config your site.
+ 2. Clone this repository to a LAMP server.
+ 3. Install [Composer](http://userhelp.silverstripe.org/framework/en/installation/composer).
+ 4. Run `composer install` to install dependancies.
+ 5. Run BuildTask `.framework/sake dev/tasks/RefreshMarkdownTask flush=1`
+ 6. Make sure to flush the cache for markdown content to show up.
 
 ## Source Documentation Files
 
