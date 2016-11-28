@@ -9,6 +9,10 @@ RefreshMarkdownTask:
     -
       - silverstripe/silverstripe-userhelp-content
       - userhelp
+      - "3.5"
+    -
+      - silverstripe/silverstripe-userhelp-content
+      - userhelp
       - "3.4"
     -
       - silverstripe/silverstripe-userhelp-content

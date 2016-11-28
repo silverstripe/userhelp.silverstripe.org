@@ -10,10 +10,15 @@ DocumentationManifest:
   automatic_registration: false
   register_entities:
     -
+      Path: "assets/src/userhelp_3.5/docs/"
+      Title: "User Help"
+      Version: "3.5"
+      Stable: true
+      DefaultEntity: true
+    -
       Path: "assets/src/userhelp_3.4/docs/"
       Title: "User Help"
       Version: "3.4"
-      Stable: true
       DefaultEntity: true
     -
       Path: "assets/src/userhelp_3.3/docs/"
