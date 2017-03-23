@@ -10,11 +10,11 @@ For adding functionality or editing the style of the documentation see the
 ## Getting started
 To set up a local development environment:
 
- 1. Use a `_ss_environment.php` file to config your site.
+ 1. Use a `_ss_environment.php` file to configure your site.
  2. Clone this repository to a LAMP server.
  3. Install [Composer](http://userhelp.silverstripe.org/framework/en/installation/composer).
  4. Run `composer install` to install dependancies.
- 5. Run BuildTask `.framework/sake dev/tasks/RefreshMarkdownTask flush=1`
+ 5. Run BuildTask `./framework/sake dev/tasks/RefreshMarkdownTask flush=1`
  6. Make sure to flush the cache for markdown content to show up.
 
 ## Source Documentation Files
@@ -52,7 +52,7 @@ DocumentationManifest:
 Set `Stable: true` on the set of documentation relating the current stable version of SilverStripe CMS.
 
 
-## Contribution
+## Contributing
 
 To contribute an improvement to the userhelp.silverstripe.org functionality or
 theme, submit a pull request on GitHub. Any approved pull requests will make
@@ -67,10 +67,12 @@ to the content are synced regularly with userhelp.silverstripe.org via the cron 
 
 The cron job `UpdateDocsCronTask` includes tasks that fetch the latest documentation for each module from git and rebuilds the search indexes.
 
-	public function getSchedule() {
+```php
+public function getSchedule() {
     return "0 8 * * *"; // runs process() function every day at 8AM
-  }
+}
+```
 
 ## Deployment
 
-Deployment is via the SilverStripe Platform deployment tool and uses StackShare.
+Deployment is via [the SilverStripe Platform](https://www.silverstripe.com/platform/) deployment tool.
