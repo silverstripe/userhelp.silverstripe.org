@@ -31,6 +31,10 @@ RefreshMarkdownTask:
       - userhelp
       - "3.0"
     -
+      - silverstripe/silverstripe-userhelp-content
+      - userhelp
+      - "master"
+    -
       - silverstripe-australia/silverstripe-versionedfiles
       - versionedfiles
       - master
