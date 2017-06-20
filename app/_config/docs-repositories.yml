@@ -106,3 +106,7 @@ RefreshMarkdownTask:
       - silverstripe-labs/silverstripe-securityreport
       - securityreport
       - master
+    -
+      - silverstripe/silverstripe-dms
+      - dms
+      - master
