@@ -9,23 +9,21 @@ DocumentationSearch:
 DocumentationManifest:
   automatic_registration: false
   register_entities:
-    # 4.0 doesn't have anything in it yet, uncomment when it has some content
-    # See: https://github.com/silverstripe/userhelp.silverstripe.org/pull/48
-    # -
-    #   Path: "assets/src/userhelp_master/docs/"
-    #   Title: "User Help"
-    #   Version: "4.0"
-    #   DefaultEntity: true
     -
-      Path: "assets/src/userhelp_3.6/docs/"
+      Path: "assets/src/userhelp_4/docs/"
       Title: "User Help"
-      Version: "3.6"
+      VersionTitle: "4.x"
+      Version: "4"
+      Branch: "4"
       Stable: true
       DefaultEntity: true
     -
-      Path: "assets/src/userhelp_3.5/docs/"
+      Path: "assets/src/userhelp_3/docs/"
       Title: "User Help"
-      Version: "3.5"
+      VersionTitle: "3.x"
+      Version: "3"
+      Branch: "3"
+      Stable: true
       DefaultEntity: true
     -
       Path: "assets/src/userhelp_3.4/docs/"

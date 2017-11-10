@@ -116,3 +116,8 @@ form .message.error {
         background: url(https://www.silverstripe.org/themes/ssv3/img/global-logo-open-source.svg) no-repeat;
     }
 }
+
+.cc-license {
+	float: right;
+	margin-left: 5px;
+}
