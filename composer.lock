@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "9a9db95d02b870d9da2c9908350c05d2",
+    "content-hash": "35d38b5033693766bbd4daf3130ffe22",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -653,16 +653,16 @@
         },
         {
             "name": "silverstripe/docsviewer",
-            "version": "dev-master",
+            "version": "2.0.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-docsviewer.git",
-                "reference": "b8cfbc204e96581c81c38f7e967b036466e969d6"
+                "reference": "fccde14751b81d19d4723cf92826d483a7555864"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-docsviewer/zipball/b8cfbc204e96581c81c38f7e967b036466e969d6",
-                "reference": "b8cfbc204e96581c81c38f7e967b036466e969d6",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-docsviewer/zipball/fccde14751b81d19d4723cf92826d483a7555864",
+                "reference": "fccde14751b81d19d4723cf92826d483a7555864",
                 "shasum": ""
             },
             "require": {
@@ -691,7 +691,7 @@
                 "documentation",
                 "silverstripe"
             ],
-            "time": "2017-09-07 05:04:18"
+            "time": "2017-11-13T01:08:23+00:00"
         },
         {
             "name": "silverstripe/dynamodb",
@@ -835,16 +835,16 @@
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v2.8.28",
+            "version": "v2.8.29",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
-                "reference": "7fe089232554357efb8d4af65ce209fc6e5a2186"
+                "reference": "b59aacf238fadda50d612c9de73b74751872a903"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/7fe089232554357efb8d4af65ce209fc6e5a2186",
-                "reference": "7fe089232554357efb8d4af65ce209fc6e5a2186",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/b59aacf238fadda50d612c9de73b74751872a903",
+                "reference": "b59aacf238fadda50d612c9de73b74751872a903",
                 "shasum": ""
             },
             "require": {
@@ -891,20 +891,20 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "time": "2017-10-01T21:00:16+00:00"
+            "time": "2017-11-05T15:25:56+00:00"
         },
         {
             "name": "symfony/yaml",
-            "version": "v3.3.10",
+            "version": "v3.3.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "8c7bf1e7d5d6b05a690b715729cb4cd0c0a99c46"
+                "reference": "0938408c4faa518d95230deabb5f595bf0de31b9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/8c7bf1e7d5d6b05a690b715729cb4cd0c0a99c46",
-                "reference": "8c7bf1e7d5d6b05a690b715729cb4cd0c0a99c46",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/0938408c4faa518d95230deabb5f595bf0de31b9",
+                "reference": "0938408c4faa518d95230deabb5f595bf0de31b9",
                 "shasum": ""
             },
             "require": {
@@ -946,7 +946,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2017-10-05T14:43:42+00:00"
+            "time": "2017-11-10T18:26:04+00:00"
         },
         {
             "name": "unclecheese/display-logic",
@@ -997,7 +997,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "silverstripe/docsviewer": 20
+        "silverstripe/docsviewer": 5
     },
     "prefer-stable": true,
     "prefer-lowest": false,
