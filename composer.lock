@@ -4,7 +4,6 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "eed3f2604b0abdd41298083de153c860",
     "content-hash": "35d38b5033693766bbd4daf3130ffe22",
     "packages": [
         {
@@ -68,7 +67,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2016-07-25 18:03:20"
+            "time": "2016-07-25T18:03:20+00:00"
         },
         {
             "name": "composer/installers",
@@ -185,7 +184,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2017-08-09 07:53:48"
+            "time": "2017-08-09T07:53:48+00:00"
         },
         {
             "name": "doctrine/cache",
@@ -255,7 +254,7 @@
                 "cache",
                 "caching"
             ],
-            "time": "2017-07-22 12:49:21"
+            "time": "2017-07-22T12:49:21+00:00"
         },
         {
             "name": "erusev/parsedown",
@@ -294,7 +293,7 @@
                 "markdown",
                 "parser"
             ],
-            "time": "2014-11-29 02:29:14"
+            "time": "2014-11-29T02:29:14+00:00"
         },
         {
             "name": "erusev/parsedown-extra",
@@ -338,7 +337,7 @@
                 "parsedown",
                 "parser"
             ],
-            "time": "2014-09-16 11:54:01"
+            "time": "2014-09-16T11:54:01+00:00"
         },
         {
             "name": "guzzle/guzzle",
@@ -434,7 +433,7 @@
                 "web service"
             ],
             "abandoned": "guzzlehttp/guzzle",
-            "time": "2015-03-18 18:23:50"
+            "time": "2015-03-18T18:23:50+00:00"
         },
         {
             "name": "mandrew/silverstripe-quickfeedback",
@@ -473,7 +472,7 @@
                 "member",
                 "silverstripe"
             ],
-            "time": "2016-02-18 04:32:50"
+            "time": "2016-02-18T04:32:50+00:00"
         },
         {
             "name": "mnapoli/front-yaml",
@@ -508,7 +507,7 @@
             "license": [
                 "MIT"
             ],
-            "time": "2017-10-29 19:29:55"
+            "time": "2017-10-29T19:29:55+00:00"
         },
         {
             "name": "mtdowling/cron-expression",
@@ -552,7 +551,7 @@
                 "cron",
                 "schedule"
             ],
-            "time": "2017-01-23 04:29:33"
+            "time": "2017-01-23T04:29:33+00:00"
         },
         {
             "name": "mustangostang/spyc",
@@ -602,7 +601,7 @@
                 "yaml",
                 "yml"
             ],
-            "time": "2017-02-24 16:06:33"
+            "time": "2017-02-24T16:06:33+00:00"
         },
         {
             "name": "silverstripe/crontask",
@@ -650,7 +649,7 @@
                 "cron",
                 "silverstripe"
             ],
-            "time": "2017-04-10 21:44:50"
+            "time": "2017-04-10T21:44:50+00:00"
         },
         {
             "name": "silverstripe/docsviewer",
@@ -692,7 +691,7 @@
                 "documentation",
                 "silverstripe"
             ],
-            "time": "2018-01-29 00:44:30"
+            "time": "2018-01-29T00:44:30+00:00"
         },
         {
             "name": "silverstripe/dynamodb",
@@ -733,20 +732,20 @@
                 "dynamodb",
                 "silverstripe"
             ],
-            "time": "2016-03-03 21:34:17"
+            "time": "2016-03-03T21:34:17+00:00"
         },
         {
             "name": "silverstripe/framework",
-            "version": "3.6.2",
+            "version": "3.6.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-framework.git",
-                "reference": "3f5ddc7d003920a3f4bd65a33ce1150fbe4ee60e"
+                "reference": "91327ab63e8c0361ce9e3af007b4a047314cd4c2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/3f5ddc7d003920a3f4bd65a33ce1150fbe4ee60e",
-                "reference": "3f5ddc7d003920a3f4bd65a33ce1150fbe4ee60e",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/91327ab63e8c0361ce9e3af007b4a047314cd4c2",
+                "reference": "91327ab63e8c0361ce9e3af007b4a047314cd4c2",
                 "shasum": ""
             },
             "require": {
@@ -755,7 +754,7 @@
                 "php": ">= 5.3.3, <7.2"
             },
             "require-dev": {
-                "phpunit/phpunit": "~3.7"
+                "phpunit/phpunit": "^3 || ^4 || ^5"
             },
             "type": "silverstripe-module",
             "extra": {
@@ -764,8 +763,38 @@
                 }
             },
             "autoload": {
+                "psr-0": {
+                    "SilverStripe\\": "src/",
+                    "Zend_": "thirdparty/Zend/"
+                },
                 "classmap": [
-                    "tests/behat/features/bootstrap"
+                    "tests/behat/features/bootstrap",
+                    "admin/code",
+                    "api",
+                    "cache",
+                    "cli",
+                    "control",
+                    "core",
+                    "dev",
+                    "email",
+                    "filesystem",
+                    "forms",
+                    "i18n",
+                    "model",
+                    "oembed",
+                    "parsers",
+                    "search",
+                    "security",
+                    "tasks",
+                    "view",
+                    "thirdparty/php-peg",
+                    "thirdparty/simpletest",
+                    "thirdparty/zend_translate_railsyaml"
+                ],
+                "exclude-from-classmap": [
+                    "view/SSTemplateParser.php.inc",
+                    "dev/phpunit/PhpUnitWrapper.php",
+                    "model/fieldtypes/compat"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -788,7 +817,7 @@
                 "framework",
                 "silverstripe"
             ],
-            "time": "2017-09-28 16:05:53"
+            "time": "2018-05-13T22:59:58+00:00"
         },
         {
             "name": "silverstripe/toolbar",
@@ -832,7 +861,7 @@
                 "source": "https://github.com/silverstripe/silverstripe-globaltoolbar/tree/4.2.0",
                 "issues": "https://github.com/silverstripe/silverstripe-globaltoolbar/issues"
             },
-            "time": "2016-10-14 02:05:33"
+            "time": "2016-10-14T02:05:33+00:00"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -892,7 +921,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "time": "2017-11-05 15:25:56"
+            "time": "2017-11-05T15:25:56+00:00"
         },
         {
             "name": "symfony/yaml",
@@ -947,7 +976,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2017-11-10 18:26:04"
+            "time": "2017-11-10T18:26:04+00:00"
         },
         {
             "name": "unclecheese/display-logic",
@@ -991,7 +1020,7 @@
                 "logic",
                 "silverstripe"
             ],
-            "time": "2016-06-21 00:24:32"
+            "time": "2016-06-21T00:24:32+00:00"
         }
     ],
     "packages-dev": [],
