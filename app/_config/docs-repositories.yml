@@ -43,21 +43,33 @@ RefreshMarkdownTask:
       - versionedfiles
       - master
     -
-      - silverstripe-australia/advancedworkflow
+      - symbiote/silverstripe-advancedworkflow
       - advancedworkflow
       - master
     -
-      - silverstripe-labs/silverstripe-registry
+      - symbiote/silverstripe-advancedworkflow
+      - advancedworkflow
+      - "4"
+    -
+      - silverstripe/registry
       - registry
       - master
+    -
+      - silverstripe/registry
+      - registry
+      - "1.0"
     -
       - silverstripe/silverstripe-forum
       - forum
       - "0.8"
     -
-      - silverstripe/silverstripe-contentreview
+      - silverstripe/contentreview
       - contentreview
       - master
+    -
+      - silverstripe/contentreview
+      - contentreview
+      - "3"
     -
       - silverstripe/silverstripe-sitewidecontent-report
       - sitewidecontent-report
@@ -67,9 +79,17 @@ RefreshMarkdownTask:
       - blog
       - master
     -
-      - camfindlay/silverstripe-userforms
+      - silverstripe/silverstripe-blog
+      - blog
+      - "2"
+    -
+      - silverstripe/silverstripe-userforms
       - userforms
       - master
+    -
+      - silverstripe/silverstripe-userforms
+      - userforms
+      - "4"
     -
       - camfindlay/silverstripe-translatable
       - translatable
@@ -91,17 +111,29 @@ RefreshMarkdownTask:
       - secureassets
       - master
     -
-      - silverstripe-labs/silverstripe-taxonomy
+      - silverstripe/taxonomy
       - taxonomy
       - master
     -
-      - silverstripe-labs/silverstripe-iframe
+      - silverstripe/taxonomy
+      - taxonomy
+      - "1"
+    -
+      - silverstripe/iframe
       - iframe
       - master
     -
-      - silverstripe-labs/silverstripe-versionfeed
+      - silverstripe/iframe
+      - iframe
+      - "1.0"
+    -
+      - silverstripe/versionfeed
       - versionfeed
       - master
+    -
+      - silverstripe/versionfeed
+      - versionfeed
+      - "1"
     -
       - silverstripe-labs/silverstripe-securityreport
       - securityreport
