@@ -51,11 +51,11 @@ RefreshMarkdownTask:
       - advancedworkflow
       - "4"
     -
-      - silverstripe/registry
+      - silverstripe/silverstripe-registry
       - registry
       - master
     -
-      - silverstripe/registry
+      - silverstripe/silverstripe-registry
       - registry
       - "1.0"
     -
@@ -63,11 +63,11 @@ RefreshMarkdownTask:
       - forum
       - "0.8"
     -
-      - silverstripe/contentreview
+      - silverstripe/silverstripe-contentreview
       - contentreview
       - master
     -
-      - silverstripe/contentreview
+      - silverstripe/silverstripe-contentreview
       - contentreview
       - "3"
     -
@@ -111,27 +111,27 @@ RefreshMarkdownTask:
       - secureassets
       - master
     -
-      - silverstripe/taxonomy
+      - silverstripe/silverstripe-taxonomy
       - taxonomy
       - master
     -
-      - silverstripe/taxonomy
+      - silverstripe/silverstripe-taxonomy
       - taxonomy
       - "1"
     -
-      - silverstripe/iframe
+      - silverstripe/silverstripe-iframe
       - iframe
       - master
     -
-      - silverstripe/iframe
+      - silverstripe/silverstripe-iframe
       - iframe
       - "1.0"
     -
-      - silverstripe/versionfeed
+      - silverstripe/silverstripe-versionfeed
       - versionfeed
       - master
     -
-      - silverstripe/versionfeed
+      - silverstripe/silverstripe-versionfeed
       - versionfeed
       - "1"
     -
