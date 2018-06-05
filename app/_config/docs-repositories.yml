@@ -75,6 +75,10 @@ RefreshMarkdownTask:
       - sitewidecontent-report
       - master
     -
+      - silverstripe/silverstripe-sitewidecontent-report
+      - sitewidecontent-report
+      - "2.0"
+    -
       - silverstripe/silverstripe-blog
       - blog
       - master
