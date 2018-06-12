@@ -66,6 +66,9 @@ ErrorDocument 500 /assets/error-500.html
 	RewriteCond %{REQUEST_URI} ^(?:(.*)/)?framework\/en [NC]
 	RewriteRule ^framework\/en\/(.*)$ %1/en/$1 [R=301,L]
 
+	# Redirect 3.5 and newer minor 3.x branches back to 3
+	RewriteRule ^en/3\.[5-9]/(.*)?$ /en/3/$1 [R=301,L]
+
 	RewriteCond %{REQUEST_URI} ^(.*)$
 	RewriteCond %{REQUEST_FILENAME} !-f
 	RewriteCond %{REQUEST_URI} !\.php$
