@@ -154,3 +154,11 @@ RefreshMarkdownTask:
       - silverstripe/silverstripe-dms
       - dms
       - master
+    -
+      - dnadesign/silverstripe-elemental
+      - elemental
+      - "3.0"
+    -
+      - bringyourownideas/silverstripe-maintenance
+      - silverstripe-maintenance
+      - "1"
