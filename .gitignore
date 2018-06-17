@@ -11,3 +11,6 @@
 /silverstripe-dynamodb/
 /crontask/
 /quickfeedback/
+/.vagrant/
+Vagrantfile
+_ss_environment.php
