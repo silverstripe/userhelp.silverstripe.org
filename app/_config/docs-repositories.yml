@@ -154,3 +154,7 @@ RefreshMarkdownTask:
       - bringyourownideas/silverstripe-maintenance
       - silverstripe-maintenance
       - "1"
+    -
+      - silverstripe/silverstripe-sharedraftcontent
+      - silverstripe-sharedraftcontent
+      - "2.0"
