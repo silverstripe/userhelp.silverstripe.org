@@ -157,4 +157,4 @@ RefreshMarkdownTask:
     -
       - silverstripe/silverstripe-sharedraftcontent
       - silverstripe-sharedraftcontent
-      - "2.0"
+      - master
