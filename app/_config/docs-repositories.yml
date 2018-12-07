@@ -149,7 +149,7 @@ RefreshMarkdownTask:
     -
       - dnadesign/silverstripe-elemental
       - elemental
-      - "3.0"
+      - master
     -
       - bringyourownideas/silverstripe-maintenance
       - silverstripe-maintenance
