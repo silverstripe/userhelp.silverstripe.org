@@ -78,7 +78,13 @@ class RefreshMarkdownTask extends BuildTask
      */
     private function cloneRepository(array $repository)
     {
-        list($remote, $folder, $branch) = $repository;
+        if (isset($repository['remote'], $repository['folder'], $repository['branch'])) {
+            $remote = $repository['remote'];
+            $folder = $repository['folder'];
+            $branch = $repository['branch'];
+        } else {
+            list($remote, $folder, $branch) = $repository;
+        }
 
         $path = $this->getPath();
 
