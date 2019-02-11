@@ -152,13 +152,13 @@ RefreshMarkdownTask:
       - master
     -
       - bringyourownideas/silverstripe-maintenance
-      - silverstripe-maintenance
+      - maintenance
       - "1"
     -
       - silverstripe/silverstripe-sharedraftcontent
-      - silverstripe-sharedraftcontent
+      - sharedraftcontent
       - master
     -
       - silverstripe/silverstripe-documentconverter
-      - silverstripe-documentconverter
+      - documentconverter
       - master
