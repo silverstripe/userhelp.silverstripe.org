@@ -162,3 +162,7 @@ RefreshMarkdownTask:
       - silverstripe/silverstripe-documentconverter
       - documentconverter
       - master
+    -
+      - silverstripe/silverstripe-ckan-registry
+      - ckan-registry
+      - master
