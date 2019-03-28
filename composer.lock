@@ -4,8 +4,43 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "141ac0b1430e9cd2c3eaf151a96b9447",
+    "content-hash": "a55478ea431ac8535c93de2bb460a1e8",
     "packages": [
+        {
+            "name": "asyncphp/doorman",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/asyncphp/doorman.git",
+                "reference": "0da7eabebeae503fc05e90acaed021c692fceb57"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/asyncphp/doorman/zipball/0da7eabebeae503fc05e90acaed021c692fceb57",
+                "reference": "0da7eabebeae503fc05e90acaed021c692fceb57",
+                "shasum": ""
+            },
+            "require": {
+                "jeremeamia/superclosure": "^1.0",
+                "php": ">=5.3.3",
+                "ramsey/array_column": "^1.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "AsyncPHP\\Doorman\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Child process management",
+            "time": "2015-07-28T00:39:41+00:00"
+        },
         {
             "name": "aws/aws-sdk-php",
             "version": "2.8.31",
@@ -446,6 +481,54 @@
             "time": "2015-03-18T18:23:50+00:00"
         },
         {
+            "name": "jeremeamia/SuperClosure",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jeremeamia/super_closure.git",
+                "reference": "4d89ca74994feab128ea46d5b3add92e6cb84554"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jeremeamia/super_closure/zipball/4d89ca74994feab128ea46d5b3add92e6cb84554",
+                "reference": "4d89ca74994feab128ea46d5b3add92e6cb84554",
+                "shasum": ""
+            },
+            "require": {
+                "nikic/php-parser": "~0.9",
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~3.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Jeremeamia\\SuperClosure": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jeremy Lindblom"
+                }
+            ],
+            "description": "Doing interesting things with closures like serialization.",
+            "homepage": "https://github.com/jeremeamia/super_closure",
+            "keywords": [
+                "closure",
+                "function",
+                "parser",
+                "serializable",
+                "serialize",
+                "tokenizer"
+            ],
+            "time": "2015-01-10T01:09:28+00:00"
+        },
+        {
             "name": "mandrew/silverstripe-quickfeedback",
             "version": "0.2.3",
             "source": {
@@ -612,6 +695,97 @@
                 "yml"
             ],
             "time": "2017-02-24T16:06:33+00:00"
+        },
+        {
+            "name": "nikic/php-parser",
+            "version": "v0.9.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nikic/PHP-Parser.git",
+                "reference": "ef70767475434bdb3615b43c327e2cae17ef12eb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/ef70767475434bdb3615b43c327e2cae17ef12eb",
+                "reference": "ef70767475434bdb3615b43c327e2cae17ef12eb",
+                "shasum": ""
+            },
+            "require": {
+                "ext-tokenizer": "*",
+                "php": ">=5.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.9-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "PHPParser": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Nikita Popov"
+                }
+            ],
+            "description": "A PHP parser written in PHP",
+            "keywords": [
+                "parser",
+                "php"
+            ],
+            "time": "2014-07-23T18:24:17+00:00"
+        },
+        {
+            "name": "ramsey/array_column",
+            "version": "1.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ramsey/array_column.git",
+                "reference": "f8e52eb28e67eb50e613b451dd916abcf783c1db"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ramsey/array_column/zipball/f8e52eb28e67eb50e613b451dd916abcf783c1db",
+                "reference": "f8e52eb28e67eb50e613b451dd916abcf783c1db",
+                "shasum": ""
+            },
+            "require-dev": {
+                "jakub-onderka/php-parallel-lint": "0.8.*",
+                "phpunit/phpunit": "~4.5",
+                "satooshi/php-coveralls": "0.6.*",
+                "squizlabs/php_codesniffer": "~2.2"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/array_column.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ben Ramsey",
+                    "homepage": "http://benramsey.com"
+                }
+            ],
+            "description": "Provides functionality for array_column() to projects using PHP earlier than version 5.5.",
+            "homepage": "https://github.com/ramsey/array_column",
+            "keywords": [
+                "array",
+                "array_column",
+                "column"
+            ],
+            "abandoned": true,
+            "time": "2015-03-20T22:07:39+00:00"
         },
         {
             "name": "silverstripe/crontask",
@@ -874,6 +1048,95 @@
             "time": "2016-10-14T02:05:33+00:00"
         },
         {
+            "name": "symbiote/silverstripe-multivaluefield",
+            "version": "3.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symbiote/silverstripe-multivaluefield.git",
+                "reference": "d201504ada5b9d87fd9e13578ff0a70f5b22e532"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symbiote/silverstripe-multivaluefield/zipball/d201504ada5b9d87fd9e13578ff0a70f5b22e532",
+                "reference": "d201504ada5b9d87fd9e13578ff0a70f5b22e532",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/framework": "~3.1"
+            },
+            "replace": {
+                "silverstripe/multivaluefield": "self.version"
+            },
+            "type": "silverstripe-module",
+            "extra": {
+                "installer-name": "multivaluefield"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Marcus Nyeholt",
+                    "email": "marcus@symbiote.com.au"
+                }
+            ],
+            "description": "A DB field + form fields for storing multiple values in a single property (serialized).",
+            "keywords": [
+                "dbfield",
+                "formfield",
+                "silverstripe"
+            ],
+            "time": "2019-02-18T05:24:26+00:00"
+        },
+        {
+            "name": "symbiote/silverstripe-queuedjobs",
+            "version": "3.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symbiote/silverstripe-queuedjobs.git",
+                "reference": "a3b7dae55505a536b43402a161c693276f46e035"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symbiote/silverstripe-queuedjobs/zipball/a3b7dae55505a536b43402a161c693276f46e035",
+                "reference": "a3b7dae55505a536b43402a161c693276f46e035",
+                "shasum": ""
+            },
+            "require": {
+                "asyncphp/doorman": "^1.2",
+                "silverstripe/framework": "^3.1",
+                "symbiote/silverstripe-multivaluefield": "^3.0"
+            },
+            "replace": {
+                "silverstripe/queuedjobs": "self.version"
+            },
+            "type": "silverstripe-module",
+            "extra": {
+                "installer-name": "queuedjobs"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Damian Mooyman",
+                    "email": "damian@silverstripe.com"
+                },
+                {
+                    "name": "Marcus Nyeholt",
+                    "email": "marcus@symbiote.com.au"
+                }
+            ],
+            "description": "A framework for defining and running background jobs in a queued manner",
+            "keywords": [
+                "jobs",
+                "silverstripe"
+            ],
+            "time": "2018-11-21T23:20:19+00:00"
+        },
+        {
             "name": "symfony/event-dispatcher",
             "version": "v2.8.41",
             "source": {
@@ -975,7 +1238,7 @@
                 },
                 {
                     "name": "Gert de Pagter",
-                    "email": "BackEndTea@gmail.com"
+                    "email": "backendtea@gmail.com"
                 }
             ],
             "description": "Symfony polyfill for ctype functions",
