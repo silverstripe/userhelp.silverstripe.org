@@ -90,11 +90,7 @@ RefreshMarkdownTask:
       - silverstripe/silverstripe-userforms
       - userforms
       - master
-    -
-      - silverstripe/silverstripe-userforms
-      - userforms
-      - "4"
-    -
+   -
       - camfindlay/silverstripe-translatable
       - translatable
       - "2.0"
