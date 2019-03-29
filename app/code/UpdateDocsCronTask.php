@@ -1,11 +1,11 @@
 <?php
 
-class UpdateDocsCronTask implements CronTask 
+class UpdateDocsCronTask implements CronTask
 {
     /**
      * @return string
      */
-    public function getSchedule() 
+    public function getSchedule()
     {
         return "0 8 * * *";
     }
@@ -13,16 +13,16 @@ class UpdateDocsCronTask implements CronTask
     /**
       * @return BuildTask
      */
-    public function process() 
+    public function process()
     {
 
-        //refresh markdown files
-        $refresh_task = new RefreshMarkdownTask();
-        $refresh_task->run(null);
+        // refresh markdown files
+        // $refresh_task = new RefreshMarkdownTask();
+        // $refresh_task->run(null);
 
-        //reindex markdown files
-        $reindex_task = new RebuildLuceneDocsIndex();
-        $reindex_task->run(null);
+        // reindex markdown files
+        // $reindex_task = new RebuildLuceneDocsIndex();
+        // $reindex_task->run(null);
 
     }
 }
