@@ -14,7 +14,8 @@
         "silverstripe/toolbar": "^4.2",
         "silverstripe/dynamodb": "^1.1",
         "mandrew/silverstripe-quickfeedback": "^0.2",
-        "symbiote/silverstripe-queuedjobs": "^3.1"
+        "symbiote/silverstripe-queuedjobs": "^3.1",
+        "silverstripe/raygun": "^1.0"
     },
     "minimum-stability": "dev",
     "prefer-stable": true
