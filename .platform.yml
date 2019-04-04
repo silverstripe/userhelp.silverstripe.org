@@ -1,0 +1,5 @@
+crons:
+  queuedjobs:
+    time: '* * * * *'
+    sake_once: 'dev/tasks/ProcessJobQueueTask'
+    vhost: 'mysite'
