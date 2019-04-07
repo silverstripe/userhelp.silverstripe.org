@@ -17,12 +17,12 @@ class UpdateDocsCronTask implements CronTask
     {
 
         // refresh markdown files
-        // $refresh_task = new RefreshMarkdownTask();
-        // $refresh_task->run(null);
+        $refresh_task = new RefreshMarkdownTask();
+        $refresh_task->run(null);
 
         // reindex markdown files
-        // $reindex_task = new RebuildLuceneDocsIndex();
-        // $reindex_task->run(null);
+        $reindex_task = new RebuildLuceneDocsIndex();
+        $reindex_task->run(null);
 
     }
 }
