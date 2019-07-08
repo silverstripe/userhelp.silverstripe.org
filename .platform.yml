@@ -3,3 +3,5 @@ crons:
     time: '* * * * *'
     sake_once: 'dev/tasks/ProcessJobQueueTask'
     vhost: 'mysite'
+php_settings:
+  version: 7.3
