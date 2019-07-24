@@ -69,7 +69,7 @@ RefreshMarkdownTask:
     -
       - silverstripe/silverstripe-contentreview
       - contentreview
-      - "3"
+      - "3.0"
     -
       - silverstripe/silverstripe-sitewidecontent-report
       - sitewidecontent-report
