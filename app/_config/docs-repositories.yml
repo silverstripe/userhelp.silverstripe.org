@@ -162,3 +162,7 @@ RefreshMarkdownTask:
       - silverstripe/silverstripe-ckan-registry
       - ckan-registry
       - master
+    -
+      - silverstripe/silverstripe-mfa
+      - mfa
+      - master
