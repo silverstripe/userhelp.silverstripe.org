@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a873a053c485939c06106d7361f84dc0",
+    "content-hash": "527fd87e11e3bee1afa2081d619fe342",
     "packages": [
         {
             "name": "asyncphp/doorman",
@@ -1358,16 +1358,16 @@
         },
         {
             "name": "silverstripe/toolbar",
-            "version": "4.2.2",
+            "version": "dev-feature/55276-swiftype-search",
             "source": {
                 "type": "git",
-                "url": "https://github.com/silverstripe/silverstripe-globaltoolbar.git",
-                "reference": "1b0ea930e122e21f44fbb3b0e7c62ea7d47a06c3"
+                "url": "https://github.com/lexakami/silverstripe-globaltoolbar.git",
+                "reference": "f669e9148d40d3dd32f52bd3ce74148074bec6c7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-globaltoolbar/zipball/1b0ea930e122e21f44fbb3b0e7c62ea7d47a06c3",
-                "reference": "1b0ea930e122e21f44fbb3b0e7c62ea7d47a06c3",
+                "url": "https://api.github.com/repos/lexakami/silverstripe-globaltoolbar/zipball/f669e9148d40d3dd32f52bd3ce74148074bec6c7",
+                "reference": "f669e9148d40d3dd32f52bd3ce74148074bec6c7",
                 "shasum": ""
             },
             "require": {
@@ -1395,10 +1395,9 @@
                 "silverstripe"
             ],
             "support": {
-                "source": "https://github.com/silverstripe/silverstripe-globaltoolbar/tree/4.2",
-                "issues": "https://github.com/silverstripe/silverstripe-globaltoolbar/issues"
+                "source": "https://github.com/lexakami/silverstripe-globaltoolbar/tree/feature/55276-swiftype-search"
             },
-            "time": "2019-07-08T23:12:15+00:00"
+            "time": "2019-08-08T04:59:31+00:00"
         },
         {
             "name": "symbiote/silverstripe-multivaluefield",
@@ -1655,7 +1654,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "silverstripe/docsviewer": 5
+        "silverstripe/docsviewer": 5,
+        "silverstripe/toolbar": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
