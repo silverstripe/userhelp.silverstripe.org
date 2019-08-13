@@ -23,7 +23,7 @@
 	<div class="header-mask">
 		<div id="navWrapper">
 			$GlobalNav('userhelp')
-			<% include SearchBox %>
 		</div>
 	</div>
 </header>
+<% include SearchModal %>

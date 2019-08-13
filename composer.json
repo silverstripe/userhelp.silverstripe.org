@@ -4,13 +4,13 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "git://github.com/silverstripe/silverstripe-globaltoolbar.git"
+            "url": "https://github.com/silverstripe/silverstripe-globaltoolbar.git"
         }
     ],
     "require": {
         "silverstripe/docsviewer": "^2.0@rc",
         "silverstripe/framework": "~3.6",
-        "silverstripe/toolbar": "^4.2",
+        "silverstripe/toolbar": "~4.2.3",
         "silverstripe/dynamodb": "^3",
         "mandrew/silverstripe-quickfeedback": "^0.2",
         "symbiote/silverstripe-queuedjobs": "^3.1",
