@@ -1,5 +1,7 @@
 # userhelp.silverstripe.org
 
+**Migrated to https://github.com/silverstripe/doc.silverstripe.org**
+
 This is the source code powering https://userhelp.silverstripe.org.  It primarily
 consists of the SilverStripe framework and the [docsviewer](https://github.com/silverstripe/silverstripe-docsviewer)
 module with minimal configuration.
